@@ -1,0 +1,104 @@
+source,target,weight,source_lat,source_lon,target_lat,target_lon
+Chulalongkorn University,Rajamangala University of Technology Tawan-ok,1,13.7367,100.5334,13.1631,100.9264
+Chulalongkorn University,Ramkhamhaeng University,2,13.7367,100.5334,13.75,100.606
+Chulalongkorn University,Burapha University,1,13.7367,100.5334,23.2857,10.9264
+Chulalongkorn University,Stanford University,8,13.7367,100.5334,37.4275,-122.1697
+Chulalongkorn University,Harvard University,11,13.7367,100.5334,42.377,-71.1167
+Chulalongkorn University,Massachusetts Institute of Technology,26,13.7367,100.5334,42.3601,-71.0942
+Chulalongkorn University,University of Oxford,15,13.7367,100.5334,51.7548,-1.2544
+Chulalongkorn University,University of Cambridge,55,13.7367,100.5334,52.2053,0.1218
+Chulalongkorn University,California Institute of Technology,27,13.7367,100.5334,34.1377,-118.1253
+Chulalongkorn University,University of Chicago,67,13.7367,100.5334,41.7897,-87.5997
+Chulalongkorn University,Columbia University,47,13.7367,100.5334,40.8075,-73.9626
+Chulalongkorn University,Princeton University,30,13.7367,100.5334,40.3431,-74.6551
+Chulalongkorn University,Yale University,81,13.7367,100.5334,41.3163,-72.9223
+Chulalongkorn University,Stanford University,5,13.7367,100.5334,37.4275,-122.1697
+Chulalongkorn University,Harvard University,52,13.7367,100.5334,42.377,-71.1167
+Chulalongkorn University,Massachusetts Institute of Technology,95,13.7367,100.5334,42.3601,-71.0942
+Chulalongkorn University,University of Oxford,31,13.7367,100.5334,51.7548,-1.2544
+Chulalongkorn University,University of Cambridge,29,13.7367,100.5334,52.2053,0.1218
+Chulalongkorn University,California Institute of Technology,21,13.7367,100.5334,34.1377,-118.1253
+Chulalongkorn University,University of Chicago,63,13.7367,100.5334,41.7897,-87.5997
+Chulalongkorn University,Columbia University,92,13.7367,100.5334,40.8075,-73.9626
+Chulalongkorn University,Princeton University,96,13.7367,100.5334,40.3431,-74.6551
+Chulalongkorn University,Yale University,27,13.7367,100.5334,41.3163,-72.9223
+Chulalongkorn University,Stanford University,55,13.7367,100.5334,37.4275,-122.1697
+Chulalongkorn University,Harvard University,24,13.7367,100.5334,42.377,-71.1167
+Chulalongkorn University,Massachusetts Institute of Technology,3,13.7367,100.5334,42.3601,-71.0942
+Chulalongkorn University,University of Oxford,87,13.7367,100.5334,51.7548,-1.2544
+Chulalongkorn University,University of Cambridge,26,13.7367,100.5334,52.2053,0.1218
+Chulalongkorn University,California Institute of Technology,49,13.7367,100.5334,34.1377,-118.1253
+Chulalongkorn University,University of Chicago,36,13.7367,100.5334,41.7897,-87.5997
+Chulalongkorn University,Columbia University,82,13.7367,100.5334,40.8075,-73.9626
+Chulalongkorn University,Princeton University,3,13.7367,100.5334,40.3431,-74.6551
+Chulalongkorn University,Yale University,35,13.7367,100.5334,41.3163,-72.9223
+Chulalongkorn University,Stanford University,58,13.7367,100.5334,37.4275,-122.1697
+Chulalongkorn University,Harvard University,16,13.7367,100.5334,42.377,-71.1167
+Chulalongkorn University,Massachusetts Institute of Technology,85,13.7367,100.5334,42.3601,-71.0942
+Chulalongkorn University,University of Oxford,60,13.7367,100.5334,51.7548,-1.2544
+Chulalongkorn University,University of Cambridge,84,13.7367,100.5334,52.2053,0.1218
+Chulalongkorn University,California Institute of Technology,71,13.7367,100.5334,34.1377,-118.1253
+Chulalongkorn University,University of Chicago,10,13.7367,100.5334,41.7897,-87.5997
+Chulalongkorn University,Columbia University,53,13.7367,100.5334,40.8075,-73.9626
+Chulalongkorn University,Princeton University,95,13.7367,100.5334,40.3431,-74.6551
+Chulalongkorn University,Yale University,7,13.7367,100.5334,41.3163,-72.9223
+Chulalongkorn University,Stanford University,68,13.7367,100.5334,37.4275,-122.1697
+Chulalongkorn University,Harvard University,31,13.7367,100.5334,42.377,-71.1167
+Chulalongkorn University,Massachusetts Institute of Technology,3,13.7367,100.5334,42.3601,-71.0942
+Chulalongkorn University,University of Oxford,17,13.7367,100.5334,51.7548,-1.2544
+Chulalongkorn University,University of Cambridge,89,13.7367,100.5334,52.2053,0.1218
+Chulalongkorn University,California Institute of Technology,23,13.7367,100.5334,34.1377,-118.1253
+Chulalongkorn University,University of Chicago,43,13.7367,100.5334,41.7897,-87.5997
+Chulalongkorn University,Columbia University,15,13.7367,100.5334,40.8075,-73.9626
+Chulalongkorn University,Princeton University,40,13.7367,100.5334,40.3431,-74.6551
+Chulalongkorn University,Yale University,70,13.7367,100.5334,41.3163,-72.9223
+Chulalongkorn University,Stanford University,35,13.7367,100.5334,37.4275,-122.1697
+Chulalongkorn University,Harvard University,86,13.7367,100.5334,42.377,-71.1167
+Chulalongkorn University,Massachusetts Institute of Technology,35,13.7367,100.5334,42.3601,-71.0942
+Chulalongkorn University,University of Oxford,1,13.7367,100.5334,51.7548,-1.2544
+Chulalongkorn University,University of Cambridge,78,13.7367,100.5334,52.2053,0.1218
+Chulalongkorn University,California Institute of Technology,3,13.7367,100.5334,34.1377,-118.1253
+Chulalongkorn University,University of Chicago,71,13.7367,100.5334,41.7897,-87.5997
+Chulalongkorn University,Columbia University,72,13.7367,100.5334,40.8075,-73.9626
+Chulalongkorn University,Princeton University,65,13.7367,100.5334,40.3431,-74.6551
+Chulalongkorn University,Yale University,86,13.7367,100.5334,41.3163,-72.9223
+Chulalongkorn University,Stanford University,76,13.7367,100.5334,37.4275,-122.1697
+Chulalongkorn University,Harvard University,53,13.7367,100.5334,42.377,-71.1167
+Chulalongkorn University,Massachusetts Institute of Technology,8,13.7367,100.5334,42.3601,-71.0942
+Chulalongkorn University,University of Oxford,81,13.7367,100.5334,51.7548,-1.2544
+Chulalongkorn University,University of Cambridge,16,13.7367,100.5334,52.2053,0.1218
+Chulalongkorn University,California Institute of Technology,85,13.7367,100.5334,34.1377,-118.1253
+Chulalongkorn University,University of Chicago,7,13.7367,100.5334,41.7897,-87.5997
+Chulalongkorn University,Columbia University,40,13.7367,100.5334,40.8075,-73.9626
+Chulalongkorn University,Princeton University,36,13.7367,100.5334,40.3431,-74.6551
+Chulalongkorn University,Yale University,7,13.7367,100.5334,41.3163,-72.9223
+Chulalongkorn University,Stanford University,86,13.7367,100.5334,37.4275,-122.1697
+Chulalongkorn University,Harvard University,38,13.7367,100.5334,42.377,-71.1167
+Chulalongkorn University,Massachusetts Institute of Technology,5,13.7367,100.5334,42.3601,-71.0942
+Chulalongkorn University,University of Oxford,25,13.7367,100.5334,51.7548,-1.2544
+Chulalongkorn University,University of Cambridge,2,13.7367,100.5334,52.2053,0.1218
+Chulalongkorn University,California Institute of Technology,10,13.7367,100.5334,34.1377,-118.1253
+Chulalongkorn University,University of Chicago,87,13.7367,100.5334,41.7897,-87.5997
+Chulalongkorn University,Columbia University,23,13.7367,100.5334,40.8075,-73.9626
+Chulalongkorn University,Princeton University,63,13.7367,100.5334,40.3431,-74.6551
+Chulalongkorn University,Yale University,35,13.7367,100.5334,41.3163,-72.9223
+Chulalongkorn University,Stanford University,38,13.7367,100.5334,37.4275,-122.1697
+Chulalongkorn University,Harvard University,26,13.7367,100.5334,42.377,-71.1167
+Chulalongkorn University,Massachusetts Institute of Technology,71,13.7367,100.5334,42.3601,-71.0942
+Chulalongkorn University,University of Oxford,44,13.7367,100.5334,51.7548,-1.2544
+Chulalongkorn University,University of Cambridge,26,13.7367,100.5334,52.2053,0.1218
+Chulalongkorn University,California Institute of Technology,9,13.7367,100.5334,34.1377,-118.1253
+Chulalongkorn University,University of Chicago,96,13.7367,100.5334,41.7897,-87.5997
+Chulalongkorn University,Columbia University,16,13.7367,100.5334,40.8075,-73.9626
+Chulalongkorn University,Princeton University,45,13.7367,100.5334,40.3431,-74.6551
+Chulalongkorn University,Yale University,97,13.7367,100.5334,41.3163,-72.9223
+Chulalongkorn University,Stanford University,91,13.7367,100.5334,37.4275,-122.1697
+Chulalongkorn University,Harvard University,57,13.7367,100.5334,42.377,-71.1167
+Chulalongkorn University,Massachusetts Institute of Technology,71,13.7367,100.5334,42.3601,-71.0942
+Chulalongkorn University,University of Oxford,63,13.7367,100.5334,51.7548,-1.2544
+Chulalongkorn University,University of Cambridge,74,13.7367,100.5334,52.2053,0.1218
+Chulalongkorn University,California Institute of Technology,44,13.7367,100.5334,34.1377,-118.1253
+Chulalongkorn University,University of Chicago,7,13.7367,100.5334,41.7897,-87.5997
+Chulalongkorn University,Columbia University,27,13.7367,100.5334,40.8075,-73.9626
+Chulalongkorn University,Princeton University,96,13.7367,100.5334,40.3431,-74.6551
+Chulalongkorn University,Yale University,86,13.7367,100.5334,41.3163,-72.9223
