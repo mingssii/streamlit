@@ -88,25 +88,45 @@ with tab1:
     node_size_option = st.sidebar.radio("Select Node Size", ["Small", "Medium", "Big"], index=1)
     node_size = {"Small": 100, "Medium": 5000, "Big": 200000}[node_size_option]
 
-# แสดงมหาวิทยาลัยต่างช่าติ
-show_overseas = st.sidebar.checkbox("Show Overseas Universities", value=True)
-# พิกัดประเทศไทย
-thailand_bounds = {
-    "north": 19.83,
-    "south": 5.64,
-    "east": 105.65,
-    "west": 97.34
-}
-if not show_overseas:
-    edges_with_coords = edges_with_coords[
-        (edges_with_coords["target_lat"] > thailand_bounds["south"]) &
-        (edges_with_coords["target_lat"] < thailand_bounds["north"]) &
-        (edges_with_coords["target_lon"] > thailand_bounds["west"]) &
-        (edges_with_coords["target_lon"] < thailand_bounds["east"])
-]
+    # แสดงมหาวิทยาลัยต่างช่าติ
+    show_overseas = st.sidebar.checkbox("Show Overseas Universities", value=True)
+    # พิกัดประเทศไทย
+    thailand_bounds = {
+        "north": 19.83,
+        "south": 5.64,
+        "east": 105.65,
+        "west": 97.34
+    }
+
+    if not show_overseas:
+        # Filter out overseas universities
+        edges_with_coords = edges_with_coords[
+            (edges_with_coords["latitude"] > thailand_bounds["south"]) &
+            (edges_with_coords["latitude"] < thailand_bounds["north"]) &
+            (edges_with_coords["longitude"] > thailand_bounds["west"]) &
+            (edges_with_coords["longitude"] < thailand_bounds["east"])
+    ]
 
     # ปรับขนาด Edge ผ่าน Slider
     edge_width = st.sidebar.slider("Edge Size", 1, 20, default_edge_width, step=1)
+
+    # กรองจุฬาลงกรณ์มหาวิทยาลัยออก
+    edges_with_coords_without_chula = edges_with_coords[edges_with_coords["Affiliation"] != "Chulalongkorn University"]
+
+    # ปรับ count ขั้นต่ำและสูงสุด
+    min_count, max_count = st.sidebar.slider(
+        "Count Range",
+        int(edges_with_coords_without_chula['count'].min()),
+        int(edges_with_coords_without_chula['count'].max()),
+        (int(edges_with_coords_without_chula['count'].min()), int(edges_with_coords_without_chula['count'].max())),
+        step=5
+    )
+
+    # กรองข้อมูลด้วย min_count และ max_count
+    edges_with_coords = edges_with_coords[
+        (edges_with_coords["count"] >= min_count) & 
+        (edges_with_coords["count"] <= max_count)
+    ]
 
     # เลือก Target ที่สนใจ
     clicked_target = st.selectbox(
