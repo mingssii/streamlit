@@ -44,6 +44,23 @@ node_size_mapping = {
 }
 node_size = node_size_mapping[node_size_option]
 
+# แสดงมหาวิทยาลัยต่างช่าติ
+show_overseas = st.sidebar.checkbox("Show Overseas Universities", value=True)
+# พิกัดประเทศไทย
+thailand_bounds = {
+    "north": 19.83,
+    "south": 5.64,
+    "east": 105.65,
+    "west": 97.34
+}
+if not show_overseas:
+    edges_with_coords = edges_with_coords[
+        (edges_with_coords["target_lat"] > thailand_bounds["south"]) &
+        (edges_with_coords["target_lat"] < thailand_bounds["north"]) &
+        (edges_with_coords["target_lon"] > thailand_bounds["west"]) &
+        (edges_with_coords["target_lon"] < thailand_bounds["east"])
+]
+
 # ปรับขนาด Edge ผ่าน Slider
 edge_width = st.sidebar.slider(
     "Edge Size", 1, 20, default_edge_width, step=1
@@ -86,12 +103,16 @@ edge_layer = pdk.Layer(
     get_target_color=[0, 102, 255, 160],
 )
 
+affiliation_count = pd.read_csv("affiliation_count.csv")
+## Merge on "target" = "Affiliation"
+edges_with_coords_with_count = pd.merge(edges_with_coords, affiliation_count, on="target", how="left")
+
 # สร้าง Layer สำหรับจุด (Nodes)
 node_layer = pdk.Layer(
     "ScatterplotLayer",
-    data=edges_with_coords[["target", "target_lat", "target_lon"]].drop_duplicates(),
+    data=edges_with_coords_with_count[["target", "target_lat", "target_lon"]].drop_duplicates(),
     get_position=["target_lon", "target_lat"],
-    get_radius=node_size,  # ขนาด Node เลือกเอง
+    get_radius=["count", 500],
     get_color=node_color,
     pickable=True,
 )
