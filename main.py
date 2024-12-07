@@ -4,6 +4,29 @@ import streamlit as st
 import plotly.express as px
 import altair as alt
 
+# Main Streamlit
+st.set_page_config(page_title="CU Research", layout="wide")
+st.markdown(
+    """
+    <style>
+    body {
+        font-family: 'Lato', sans-serif; /* Smooth, clean font */
+        color: #4F4F4F; /* Body text in a soft gray */
+        background-color: #F5F5F5; /* Subtle off-white background */
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #2C3E50; /* Darker gray for headers */
+        font-family: 'Merriweather', serif; /* Optional: use a different font for headers */
+    }
+    .stMarkdown {
+        color: #4F4F4F; /* Apply smooth text color to markdown */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+st.title("Chulalongkorn University Research Analysis")
+
 # ฟังก์ชันโหลดข้อมูล CSV
 @st.cache_data
 def load_data_latin(path):
@@ -75,12 +98,14 @@ default_zoom = 7
 default_pitch = 50
 default_edge_width = 3
 
-# ส่วนของ Streamlit
-st.header("Visualization Project")
-tab1, tab2, tab3 = st.tabs(["Tab 1", "Tab 2", "Tab 3"])
 
-with tab1:
+
+
+Collab_Analysis, Citation_Analysis = st.tabs(["Collab_Analysis", "Citation_Analysis"])
+
+with Collab_Analysis:
     st.sidebar.header("Visualization Settings")
+    st.sidebar.subheader("Collab_Analysis")
 
     # เลือกธีมแผนที่
     map_style = st.sidebar.selectbox("Select Map Style", ["light", "dark", "satellite", "streets"], index=0)
@@ -151,7 +176,7 @@ with tab1:
     # แสดงแผนที่
     display_map(edges_with_coords, dynamic_view_state, edge_layer, node_layer, map_style)
 
-with tab2:
+with Citation_Analysis:
     # แปลง Date_sort ให้เป็น datetime
     cited["Date_sort"] = pd.to_datetime(cited["Date_sort"])
 
