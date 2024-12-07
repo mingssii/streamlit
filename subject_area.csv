@@ -1,0 +1,322 @@
+,Subject_area_code,Subject_area_abbrev,Subject_area_name
+0,2305,ENVI,Environmental Engineering
+1,3003,PHAR,Pharmaceutical Science
+2,2736,MEDI,Pharmacology (medical)
+3,2808,NEUR,Neurology
+4,2728,MEDI,Neurology (clinical)
+5,3400,VETE,Veterinary (all)
+6,2105,ENER,"Renewable Energy, Sustainability and the Environment"
+7,2207,ENGI,Control and Systems Engineering
+8,2205,ENGI,Civil and Structural Engineering
+9,2215,ENGI,Building and Construction
+10,1705,COMP,Computer Networks and Communications
+11,1303,BIOC,Biochemistry
+12,1312,BIOC,Molecular Biology
+13,1311,BIOC,Genetics
+14,1306,BIOC,Cancer Research
+15,2201,ENGI,Engineering (miscellaneous)
+16,3101,PHYS,Physics and Astronomy (miscellaneous)
+17,2300,ENVI,Environmental Science (all)
+18,1900,EART,Earth and Planetary Sciences (all)
+19,3106,PHYS,Nuclear and High Energy Physics
+20,1103,AGRI,Animal Science and Zoology
+21,2900,NURS,Nursing (all)
+22,1502,CENG,Bioengineering
+23,2204,ENGI,Biomedical Engineering
+24,2500,MATE,Materials Science (all)
+25,3104,PHYS,Condensed Matter Physics
+26,2715,MEDI,Gastroenterology
+27,2405,IMMU,Parasitology
+28,2404,IMMU,Microbiology
+29,1109,AGRI,Insect Science
+30,2725,MEDI,Infectious Diseases
+31,2727,MEDI,Nephrology
+32,2708,MEDI,Dermatology
+33,1600,CHEM,Chemistry (all)
+34,1313,BIOC,Molecular Medicine
+35,1105,AGRI,"Ecology, Evolution, Behavior and Systematics"
+36,1500,CENG,Chemical Engineering (all)
+37,2507,MATE,Polymers and Plastics
+38,2209,ENGI,Industrial and Manufacturing Engineering
+39,2505,MATE,Materials Chemistry
+40,2724,MEDI,Internal Medicine
+41,2712,MEDI,"Endocrinology, Diabetes and Metabolism"
+42,2721,MEDI,Hepatology
+43,1310,BIOC,Endocrinology
+44,1503,CENG,Catalysis
+45,2733,MEDI,Otorhinolaryngology
+46,3500,DENT,Dentistry (all)
+47,2403,IMMU,Immunology
+48,3404,VETE,Small Animals
+49,3403,VETE,Food Animals
+50,3402,VETE,Equine
+51,2901,NURS,Nursing (miscellaneous)
+52,3305,SOCI,"Geography, Planning and Development"
+53,3303,SOCI,Development
+54,1305,BIOC,Biotechnology
+55,2402,IMMU,Applied Microbiology and Biotechnology
+56,2739,MEDI,"Public Health, Environmental and Occupational Health"
+57,2208,ENGI,Electrical and Electronic Engineering
+58,3004,PHAR,Pharmacology
+59,2406,IMMU,Virology
+60,2312,ENVI,Water Science and Technology
+61,2311,ENVI,Waste Management and Disposal
+62,2310,ENVI,Pollution
+63,1314,BIOC,Physiology
+64,1110,AGRI,Plant Science
+65,3505,DENT,Orthodontics
+66,2726,MEDI,Microbiology (medical)
+67,2730,MEDI,Oncology
+68,1607,CHEM,Spectroscopy
+69,1606,CHEM,Physical and Theoretical Chemistry
+70,1704,COMP,Computer Graphics and Computer-Aided Design
+71,1102,AGRI,Agronomy and Crop Science
+72,2304,ENVI,Environmental Chemistry
+73,2307,ENVI,"Health, Toxicology and Mutagenesis"
+74,3105,PHYS,Instrumentation
+75,2508,MATE,"Surfaces, Coatings and Films"
+76,2720,MEDI,Hematology
+77,2716,MEDI,Genetics (clinical)
+78,2738,MEDI,Psychiatry and Mental Health
+79,2803,NEUR,Biological Psychiatry
+80,1404,BUSI,Management Information Systems
+81,1712,COMP,Software
+82,1802,DECI,Information Systems and Management
+83,1702,COMP,Artificial Intelligence
+84,1602,CHEM,Analytical Chemistry
+85,1106,AGRI,Food Science
+86,1304,BIOC,Biophysics
+87,1309,BIOC,Developmental Biology
+88,1506,CENG,Filtration and Separation
+89,2103,ENER,Fuel Technology
+90,2102,ENER,Energy Engineering and Power Technology
+91,2101,ENER,Energy (miscellaneous)
+92,1603,CHEM,Electrochemistry
+93,2602,MATH,Algebra and Number Theory
+94,2612,MATH,Numerical Analysis
+95,2608,MATH,Geometry and Topology
+96,2607,MATH,Discrete Mathematics and Combinatorics
+97,1604,CHEM,Inorganic Chemistry
+98,2211,ENGI,Mechanics of Materials
+99,2210,ENGI,Mechanical Engineering
+100,2735,MEDI,"Pediatrics, Perinatology and Child Health"
+101,2741,MEDI,"Radiology, Nuclear Medicine and Imaging"
+102,2002,ECON,Economics and Econometrics
+103,1909,EART,Geotechnical Engineering and Engineering Geology
+104,3311,SOCI,Safety Research
+105,1907,EART,Geology
+106,2746,MEDI,Surgery
+107,2604,MATH,Applied Mathematics
+108,1706,COMP,Computer Science Applications
+109,3002,PHAR,Drug Discovery
+110,2707,MEDI,Complementary and Alternative Medicine
+111,1605,CHEM,Organic Chemistry
+112,2504,MATE,"Electronic, Optical and Magnetic Materials"
+113,2734,MEDI,Pathology and Forensic Medicine
+114,3504,DENT,Oral Surgery
+115,3506,DENT,Periodontics
+116,2213,ENGI,"Safety, Risk, Reliability and Quality"
+117,1504,CENG,Chemical Health and Safety
+118,1203,ARTS,Language and Linguistics
+119,3205,PSYC,Experimental and Cognitive Psychology
+120,3310,SOCI,Linguistics and Language
+121,2804,NEUR,Cellular and Molecular Neuroscience
+122,2200,ENGI,Engineering (all)
+123,3100,PHYS,Physics and Astronomy (all)
+124,2701,MEDI,Medicine (miscellaneous)
+125,1301,BIOC,"Biochemistry, Genetics and Molecular Biology (miscellaneous)"
+126,1307,BIOC,Cell Biology
+127,3614,HEAL,Radiological and Ultrasound Technology
+128,1300,BIOC,"Biochemistry, Genetics and Molecular Biology (all)"
+129,2613,MATH,Statistics and Probability
+130,2502,MATE,Biomaterials
+131,1505,CENG,Colloid and Surface Chemistry
+132,1710,COMP,Information Systems
+133,1708,COMP,Hardware and Architecture
+134,1703,COMP,Computational Theory and Mathematics
+135,3103,PHYS,Astronomy and Astrophysics
+136,1912,EART,Space and Planetary Science
+137,1401,BUSI,"Business, Management and Accounting (miscellaneous)"
+138,1711,COMP,Signal Processing
+139,1707,COMP,Computer Vision and Pattern Recognition
+140,2611,MATH,Modeling and Simulation
+141,1709,COMP,Human-Computer Interaction
+142,3200,PSYC,Psychology (all)
+143,3107,PHYS,"Atomic and Molecular Physics, and Optics"
+144,1104,AGRI,Aquatic Science
+145,2740,MEDI,Pulmonary and Respiratory Medicine
+146,2706,MEDI,Critical Care and Intensive Care Medicine
+147,1100,AGRI,Agricultural and Biological Sciences (all)
+148,3313,SOCI,Transportation
+149,1507,CENG,Fluid Flow and Transfer Processes
+150,1315,BIOC,Structural Biology
+151,2605,MATH,Computational Mathematics
+152,3000,PHAR,"Pharmacology, Toxicology and Pharmaceutics (all)"
+153,1501,CENG,Chemical Engineering (miscellaneous)
+154,1508,CENG,Process Chemistry and Technology
+155,2800,NEUR,Neuroscience (all)
+156,2000,ECON,"Economics, Econometrics and Finance (all)"
+157,3304,SOCI,Education
+158,2705,MEDI,Cardiology and Cardiovascular Medicine
+159,2703,MEDI,Anesthesiology and Pain Medicine
+160,1908,EART,Geophysics
+161,2308,ENVI,"Management, Monitoring, Policy and Law"
+162,2700,MEDI,Medicine (all)
+163,1910,EART,Oceanography
+164,1906,EART,Geochemistry and Petrology
+165,1403,BUSI,Business and International Management
+166,3312,SOCI,Sociology and Political Science
+167,1408,BUSI,Strategy and Management
+168,1407,BUSI,Organizational Behavior and Human Resource Management
+169,1803,DECI,Management Science and Operations Research
+170,3005,PHAR,Toxicology
+171,3110,PHYS,Surfaces and Interfaces
+172,2748,MEDI,Urology
+173,3203,PSYC,Clinical Psychology
+174,2506,MATE,Metals and Alloys
+175,2400,IMMU,Immunology and Microbiology (all)
+176,1107,AGRI,Forestry
+177,2711,MEDI,Emergency Medicine
+178,2732,MEDI,Orthopedics and Sports Medicine
+179,2104,ENER,Nuclear Energy and Engineering
+180,1700,COMP,Computer Science (all)
+181,2723,MEDI,Immunology and Allergy
+182,1308,BIOC,Clinical Biochemistry
+183,1210,ARTS,Music
+184,3314,SOCI,Anthropology
+185,3301,SOCI,Social Sciences (miscellaneous)
+186,2719,MEDI,Health Policy
+187,2737,MEDI,Physiology (medical)
+188,1406,BUSI,Marketing
+189,1101,AGRI,Agricultural and Biological Sciences (miscellaneous)
+190,2910,NURS,"Issues, Ethics and Legal Aspects"
+191,3306,SOCI,Health (social science)
+192,3315,SOCI,Communication
+193,3316,SOCI,Cultural Studies
+194,2303,ENVI,Ecology
+195,1207,ARTS,History and Philosophy of Science
+196,2100,ENER,Energy (all)
+197,2603,MATH,Analysis
+198,2606,MATH,Control and Optimization
+199,3300,SOCI,Social Sciences (all)
+200,2216,ENGI,Architecture
+201,3322,SOCI,Urban Studies
+202,2713,MEDI,Epidemiology
+203,2203,ENGI,Automotive Engineering
+204,2214,ENGI,Media Technology
+205,2913,NURS,Maternity and Midwifery
+206,2902,NURS,Advanced and Specialized Nursing
+207,1000,MULT,Multidisciplinary
+208,3204,PSYC,Developmental and Educational Psychology
+209,1213,ARTS,Visual Arts and Performing Arts
+210,1212,ARTS,Religious Studies
+211,1208,ARTS,Literature and Literary Theory
+212,1913,EART,Stratigraphy
+213,1911,EART,Paleontology
+214,2722,MEDI,Histology
+215,2600,MATH,Mathematics (all)
+216,1402,BUSI,Accounting
+217,2916,NURS,Nutrition and Dietetics
+218,3320,SOCI,Political Science and International Relations
+219,1108,AGRI,Horticulture
+220,1202,ARTS,History
+221,1701,COMP,Computer Science (miscellaneous)
+222,2903,NURS,Assessment and Diagnosis
+223,1405,BUSI,Management of Technology and Innovation
+224,1211,ARTS,Philosophy
+225,1400,BUSI,"Business, Management and Accounting (all)"
+226,1200,ARTS,Arts and Humanities (all)
+227,2911,NURS,Leadership and Management
+228,3001,PHAR,"Pharmacology, Toxicology and Pharmaceutics (miscellaneous)"
+229,3207,PSYC,Social Psychology
+230,3202,PSYC,Applied Psychology
+231,2729,MEDI,Obstetrics and Gynecology
+232,3308,SOCI,Law
+233,2731,MEDI,Ophthalmology
+234,2614,MATH,Theoretical Computer Science
+235,2717,MEDI,Geriatrics and Gerontology
+236,3611,HEAL,Pharmacy
+237,1601,CHEM,Chemistry (miscellaneous)
+238,3321,SOCI,Public Administration
+239,1111,AGRI,Soil Science
+240,2718,MEDI,Health Informatics
+241,2503,MATE,Ceramics and Composites
+242,1409,BUSI,"Tourism, Leisure and Hospitality Management"
+243,3612,HEAL,"Physical Therapy, Sports Therapy and Rehabilitation"
+244,2742,MEDI,Rehabilitation
+245,2905,NURS,Community and Home Care
+246,2003,ECON,Finance
+247,2805,NEUR,Cognitive Neuroscience
+248,3317,SOCI,Demography
+249,2809,NEUR,Sensory Systems
+250,2802,NEUR,Behavioral Neuroscience
+251,2704,MEDI,Biochemistry (medical)
+252,1204,ARTS,Archeology (arts and humanities)
+253,2702,MEDI,Anatomy
+254,3206,PSYC,Neuropsychology and Physiological Psychology
+255,3501,DENT,Dentistry (miscellaneous)
+256,2202,ENGI,Aerospace Engineering
+257,2212,ENGI,Ocean Engineering
+258,3607,HEAL,Medical Laboratory Technology
+259,2745,MEDI,Rheumatology
+260,2206,ENGI,Computational Mechanics
+261,2306,ENVI,Global and Planetary Change
+262,3302,SOCI,Archeology
+263,3108,PHYS,Radiation
+264,1902,EART,Atmospheric Science
+265,1801,DECI,Decision Sciences (miscellaneous)
+266,2609,MATH,Logic
+267,3601,HEAL,Health Professions (miscellaneous)
+268,1904,EART,Earth-Surface Processes
+269,2610,MATH,Mathematical Physics
+270,2501,MATE,Materials Science (miscellaneous)
+271,1901,EART,Earth and Planetary Sciences (miscellaneous)
+272,3602,HEAL,Chiropractics
+273,2747,MEDI,Transplantation
+274,2909,NURS,Gerontology
+275,2908,NURS,Fundamentals and Skills
+276,2807,NEUR,Endocrine and Autonomic Systems
+277,2806,NEUR,Developmental Neuroscience
+278,3401,VETE,Veterinary (miscellaneous)
+279,3307,SOCI,Human Factors and Ergonomics
+280,2401,IMMU,Immunology and Microbiology (miscellaneous)
+281,2309,ENVI,Nature and Landscape Conservation
+282,2914,NURS,Medical and Surgical Nursing
+283,2001,ECON,"Economics, Econometrics and Finance (miscellaneous)"
+284,3319,SOCI,Life-span and Life-course Studies
+285,2302,ENVI,Ecological Modeling
+286,1804,DECI,"Statistics, Probability and Uncertainty"
+287,2301,ENVI,Environmental Science (miscellaneous)
+288,1201,ARTS,Arts and Humanities (miscellaneous)
+289,1800,DECI,Decision Sciences (all)
+290,1903,EART,Computers in Earth Sciences
+291,3109,PHYS,Statistical and Nonlinear Physics
+292,1302,BIOC,Aging
+293,1206,ARTS,Conservation
+294,3600,HEAL,Health Professions (all)
+295,3605,HEAL,Health Information Management
+296,3309,SOCI,Library and Information Sciences
+297,3603,HEAL,Complementary and Manual Therapy
+298,2921,NURS,Psychiatric Mental Health
+299,2917,NURS,Oncology (nursing)
+300,2743,MEDI,Reproductive Medicine
+301,2601,MATH,Mathematics (miscellaneous)
+302,3503,DENT,Dental Hygiene
+303,3201,PSYC,Psychology (miscellaneous)
+304,2919,NURS,Pediatrics
+305,1905,EART,Economic Geology
+306,3102,PHYS,Acoustics and Ultrasonics
+307,2801,NEUR,Neuroscience (miscellaneous)
+308,1209,ARTS,Museology
+309,2922,NURS,Research and Theory
+310,3616,HEAL,Speech and Hearing
+311,1410,BUSI,Industrial Relations
+312,2904,NURS,Care Planning
+313,3502,DENT,Dental Assisting
+314,3613,HEAL,Podiatry
+315,2906,NURS,Critical Care Nursing
+316,2907,NURS,Emergency Nursing
+317,3610,HEAL,Optometry
+318,3609,HEAL,Occupational Therapy
+319,3318,SOCI,Gender Studies
+320,2714,MEDI,Family Practice
