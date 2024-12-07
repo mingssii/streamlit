@@ -3,8 +3,12 @@ import pandas as pd
 import streamlit as st
 
 # โหลดข้อมูล CSV
-edges_with_coords = pd.read_csv("updated_network_with_real_universities.csv")
+@st.cache_data
+def load_data(path):
+    return pd.read_csv(path, encoding="latin1")
 
+path = "affiliation_location.csv"
+edges_with_coords = load_data(path)
 # ฟังก์ชันสร้าง ViewState
 def update_view_state(lat, lon, zoom, pitch):
     return pdk.ViewState(
@@ -51,14 +55,14 @@ edge_width = st.sidebar.slider(
 
 # เลือก Target ที่สนใจ
 clicked_target = st.selectbox(
-    "Select a Target University (or click an edge):", edges_with_coords["target"].unique()
+    "Select a Target University (or click an edge):", edges_with_coords["affiliation"].unique()
 )
 
 # อัปเดต ViewState ตาม Target ที่เลือก
 if clicked_target:
-    target_info = edges_with_coords[edges_with_coords["target"] == clicked_target].iloc[0]
+    target_info = edges_with_coords[edges_with_coords["affiliation"] == clicked_target].iloc[0]
     dynamic_view_state = update_view_state(
-        target_info["target_lat"], target_info["target_lon"], default_zoom, default_pitch
+        target_info["latitude"], target_info["longitude"], default_zoom, default_pitch
     )
 else:
     dynamic_view_state = update_view_state(default_lat, default_lon, default_zoom, default_pitch)
@@ -77,8 +81,8 @@ else:  # streets
 edge_layer = pdk.Layer(
     "ArcLayer",
     data=edges_with_coords,
-    get_source_position=["source_lon", "source_lat"],
-    get_target_position=["target_lon", "target_lat"],
+    get_source_position=[default_lon, default_lat],
+    get_target_position=["longitude", "latitude"],
     get_width=edge_width,  # ขนาด Edge ปรับเอง
     auto_highlight=True,
     pickable=True,
@@ -89,8 +93,8 @@ edge_layer = pdk.Layer(
 # สร้าง Layer สำหรับจุด (Nodes)
 node_layer = pdk.Layer(
     "ScatterplotLayer",
-    data=edges_with_coords[["target", "target_lat", "target_lon"]].drop_duplicates(),
-    get_position=["target_lon", "target_lat"],
+    data=edges_with_coords[["affiliation", "latitude", "longitude"]].drop_duplicates(),
+    get_position=["longitude", "latitude"],
     get_radius=node_size,  # ขนาด Node เลือกเอง
     get_color=node_color,
     pickable=True,
@@ -103,7 +107,7 @@ st.pydeck_chart(
         initial_view_state=dynamic_view_state,
         map_style=f"mapbox://styles/mapbox/{map_style}-v9",
         tooltip={
-            "html": "<b>Target:</b> {target}",
+            "html": "<b>Target:</b> {affiliation}",
             "style": {"color": "white"},
         },
     )
