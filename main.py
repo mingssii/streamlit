@@ -2,6 +2,7 @@ import pydeck as pdk
 import pandas as pd
 import streamlit as st
 import plotly.express as px
+import altair as alt
 
 # ฟังก์ชันโหลดข้อมูล CSV
 @st.cache_data
@@ -168,16 +169,6 @@ with tab2:
     max_id = cited["ID_Cumsum"].max()
     max_cited = cited["Cited_Cumsum"].max()
 
-    # ปรับขนาดขั้นต่ำและสูงสุดของจุด
-    min_size, max_size = 20, 100
-    cited["Adjusted_Size"] = cited["Cited"].clip(lower=1)  # กำหนดค่า Cited ขั้นต่ำที่ 1 เพื่อหลีกเลี่ยงจุดที่เล็กเกินไป
-    cited["Adjusted_Size"] = (
-        (cited["Adjusted_Size"] - cited["Adjusted_Size"].min())
-        / (cited["Adjusted_Size"].max() - cited["Adjusted_Size"].min())
-        * (max_size - min_size)
-        + min_size
-    )
-
     # UI สำหรับปรับความเร็ว Animation
     st.title("Cumulative Analysis of Cited vs IDs")
     st.write("Visualizing the cumulative citations vs cumulative IDs by subject area over time.")
@@ -189,9 +180,9 @@ with tab2:
         x="ID_Cumsum",
         y="Cited_Cumsum",
         color="Subject_area_abbrev",
+        size=None,
         animation_frame="Month-Year",
         animation_group="Subject_area_abbrev",
-        size="Adjusted_Size",  # ใช้คอลัมน์ที่ปรับขนาดแล้ว
         hover_name="Subject_area_name",
         title="Cumulative Citations vs IDs by Subject Area",
         labels={
@@ -209,3 +200,61 @@ with tab2:
 
     # แสดงกราฟ
     st.plotly_chart(fig, use_container_width=True)
+
+
+    # แปลง Date_sort เป็น datetime และเพิ่ม Year
+    cited["Date_sort"] = pd.to_datetime(cited["Date_sort"])
+    cited["Year"] = cited["Date_sort"].dt.year
+
+    # คำนวณ Subject_area_name ที่มีจำนวน ID มากที่สุดในแต่ละปี
+    max_id_per_year = (
+        cited.groupby(["Year", "Subject_area_name", "Subject_area_abbrev"])["Id"]
+        .count()
+        .reset_index(name="ID_Count")
+        .sort_values(by=["Year", "ID_Count"], ascending=[True, False])
+        .drop_duplicates(subset=["Year"])
+        .rename(columns={"Subject_area_name": "Subject_area_name_ID"})
+    )
+
+    # คำนวณ Subject_area_name ที่มีจำนวน Cited มากที่สุดในแต่ละปี
+    max_cited_per_year = (
+        cited.groupby(["Year", "Subject_area_name", "Subject_area_abbrev"])["Cited"]
+        .sum()
+        .reset_index()
+        .sort_values(by=["Year", "Cited"], ascending=[True, False])
+        .drop_duplicates(subset=["Year"])
+        .rename(columns={"Subject_area_name": "Subject_area_name_Cited", "Cited": "Cited_Count"})
+    )
+
+    # Streamlit application
+    st.title("Analysis of Subject Areas Over the Years")
+
+    # Visualization for max ID count using Altair
+    st.subheader("Visualization: Subject Areas with Maximum ID Count")
+    chart_id = alt.Chart(max_id_per_year).mark_bar().encode(
+        x=alt.X("Year:O", title="Year"),
+        y=alt.Y("ID_Count:Q", title="ID Count"),
+        color=alt.Color("Subject_area_name_ID:N", title="Subject Area"),
+        tooltip=["Year", "Subject_area_name_ID","Subject_area_abbrev", "ID_Count"]
+    ).properties(
+        title="Top Subject Areas by ID Count",
+        width=600,
+        height=400
+    ).configure_title(fontSize=20).configure_axis(labelFontSize=12, titleFontSize=14)
+
+    st.altair_chart(chart_id, use_container_width=True)
+
+    # Visualization for max Cited count using Altair
+    st.subheader("Visualization: Subject Areas with Maximum Citations")
+    chart_cited = alt.Chart(max_cited_per_year).mark_bar().encode(
+        x=alt.X("Year:O", title="Year"),
+        y=alt.Y("Cited_Count:Q", title="Cited Count"),
+        color=alt.Color("Subject_area_name_Cited:N", title="Subject Area"),
+        tooltip=["Year", "Subject_area_name_Cited","Subject_area_abbrev", "Cited_Count"]
+    ).properties(
+        title="Top Subject Areas by Citation Count",
+        width=600,
+        height=400
+    ).configure_title(fontSize=20).configure_axis(labelFontSize=12, titleFontSize=14)
+
+    st.altair_chart(chart_cited, use_container_width=True)
