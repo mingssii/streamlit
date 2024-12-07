@@ -1,6 +1,6 @@
 Affiliation,Country,count,latitude,longitude
 Chulalongkorn University,Thailand,18902,13.74310735,100.5328837
-"Faculty of Medicine, Chulalongkorn University",Thailand,2092,14.8971921,100.83273
+"Faculty of Medicine, Chulalongkorn University",Thailand,2092,13.73325,100.536024
 King Chulalongkorn Memorial Hospital,Thailand,1755,13.73288335,100.5353217
 Mahidol University,Thailand,1152,13.79465205,100.3218583
 Universiti Malaya,Malaysia,638,3.1257602,101.6558796
@@ -85,8 +85,8 @@ Panjab University,India,526,30.76046215,76.7663284
 Rice University,United States,526,29.71679145,-95.40478113
 Sofia University St. Kliment Ohridski,Bulgaria,526,42.6935092,23.33531687
 University of Delhi,India,526,28.5846757,77.16358981
-University of Nebraska–Lincoln,United States,526,40.8305567,-96.6697373
-Rutgers University–New Brunswick,United States,525,40.4929778,-74.44510808
+University of Nebraskaï¿½Lincoln,United States,526,40.8305567,-96.6697373
+Rutgers Universityï¿½New Brunswick,United States,525,40.4929778,-74.44510808
 Texas Tech University,United States,525,33.59375255,-101.8995955
 The University of Alabama,United States,525,33.2166374,-87.5526506
 University of Ioannina,Greece,525,39.61565905,20.84126468
@@ -567,7 +567,7 @@ University of Southern California,United States,32,34.02186895,-118.2858579
 "University of the Witwatersrand, Johannesburg",South Africa,32,-26.1888766,28.0247912
 University of Ulsan College of Medicine,South Korea,32,37.52544525,127.1103466
 Vrije Universiteit Amsterdam,Netherlands,32,52.3340539,4.865188202
-Charit? – Universit?tsmedizin Berlin,Germany,31,52.5299885,13.34866394
+Charit? ï¿½ Universit?tsmedizin Berlin,Germany,31,52.5299885,13.34866394
 Ho Chi Minh City University of Education,Viet Nam,31,10.85279065,106.7725584
 Huachiew Chalermprakiet University,Thailand,31,14.8971921,100.83273
 London School of Hygiene &amp; Tropical Medicine,United Kingdom,31,54.7023545,-3.2765753
@@ -754,7 +754,7 @@ Ho Chi Minh City University of Technology - HCMUT,Viet Nam,21,15.9266657,107.965
 Keck School of Medicine of USC,United States,21,39.7837304,-100.445882
 King's College Hospital,United Kingdom,21,51.46813305,-0.093668209
 KK Women's And Children's Hospital,Singapore,21,1.3105297,103.8467804
-KU Leuven– University Hospital Leuven,Belgium,21,50.6402809,4.6667145
+KU Leuvenï¿½ University Hospital Leuven,Belgium,21,50.6402809,4.6667145
 Meiji Pharmaceutical University,Japan,21,36.5748441,139.2394179
 Nagoya City University Graduate School of Medical Sciences,Japan,21,36.5748441,139.2394179
 National Institutes of Natural Sciences - National Astronomical Observatory of Japan,Japan,21,36.5748441,139.2394179
@@ -971,7 +971,7 @@ Heinrich-Heine-Universit?t D?sseldorf,Germany,15,51.19077325,6.793516714
 Hospital Selayang,Malaysia,15,3.2434232,101.6469679
 Humboldt-Universit?t zu Berlin,Germany,15,52.5183402,13.39292023
 Indian Institute of Technology Roorkee,India,15,29.86616555,77.89573483
-Iscte – Instituto Universit?rio de Lisboa,Portugal,15,38.7486143,-9.154020203
+Iscte ï¿½ Instituto Universit?rio de Lisboa,Portugal,15,38.7486143,-9.154020203
 IU School of Nursing,United States,15,39.7837304,-100.445882
 Jashore University of Science and Technology,Bangladesh,15,24.4769288,90.2934413
 Jilin University,China,15,43.880146,125.301151
@@ -989,7 +989,7 @@ PTT Exploration and Production Public Company Limited,Thailand,15,5.25845825,115
 Radboud Universiteit,Netherlands,15,51.82151725,5.863420949
 Revitalis,Netherlands,15,48.1020725,11.6631377
 Space Telescope Science Institute,United States,15,39.3329284,-76.623172
-St. Luke’s Medical Center,Philippines,15,14.6230767,121.0231776
+St. Lukeï¿½s Medical Center,Philippines,15,14.6230767,121.0231776
 Technische Universit?t Dresden,Germany,15,51.0282765,13.73598275
 The Aga Khan University,Pakistan,15,0.3208468,32.56841417
 The Education University of Hong Kong,China,15,22.46931635,114.1947005
@@ -1096,7 +1096,7 @@ Ruhr-Universitat Bochum,Germany,13,51.44415765,7.260965412
 School of Medicine,Iran,13,40.77048745,-111.8355754
 School of Medicine,Greece,13,40.77048745,-111.8355754
 Scuola Normale e Sezione dell'Infn,Italy,13,42.6384261,12.674297
-"St George’s, University of London",United Kingdom,13,54.7023545,-3.2765753
+"St Georgeï¿½s, University of London",United Kingdom,13,54.7023545,-3.2765753
 St. Jude Children's Research Hospital,United States,13,35.15438955,-90.04222096
 Surin Hospital,Thailand,13,14.8765029,103.5033445
 Taibah University,Saudi Arabia,13,24.4855291,39.54280726
@@ -1189,7 +1189,7 @@ Universit?t Duisburg-Essen,Germany,12,51.4641041,7.00584698
 Universitat fur Bodenkultur Wien,Austria,12,48.2467548,16.3673228
 Universitatea Transilvania din Bra?ov,Romania,12,45.9852129,24.6859225
 University Health Network University of Toronto,Canada,12,61.0666922,-107.991707
-University of Arizona College of Medicine – Tucson,United States,12,39.7837304,-100.445882
+University of Arizona College of Medicine ï¿½ Tucson,United States,12,39.7837304,-100.445882
 University of Denver,United States,12,39.67831365,-104.9625092
 University of Kentucky,United States,12,38.0266291,-84.50472224
 University of Miami Leonard M. Miller School of Medicine,United States,12,39.7837304,-100.445882
@@ -1343,7 +1343,7 @@ Maharaj Nakorn Chiang Mai Hospital,Thailand,10,18.7898543,98.97435362
 Manchester Metropolitan University,United Kingdom,10,53.4697435,-2.237409335
 Medical University of Warsaw,Poland,10,52.22423855,21.00161464
 Melbourne School of Population and Global Health,Australia,10,-24.7761086,134.755
-Mindanao State University – Iligan Institute of Technology,Philippines,10,8.2415113,124.243977
+Mindanao State University ï¿½ Iligan Institute of Technology,Philippines,10,8.2415113,124.243977
 Moredun Research Institute,United Kingdom,10,54.7023545,-3.2765753
 National Heart and Lung Institute,United Kingdom,10,51.4869536,-0.1707824
 National Institute of Metrology (Thailand),Thailand,10,14.8971921,100.83273
@@ -1493,7 +1493,7 @@ Phramongkutklao Hospital,Thailand,9,13.7681299,100.5347459
 Phrapokklao Hospital,Thailand,9,14.8971921,100.83273
 Qatar University,Qatar,9,25.3719714,51.48795786
 Queen Saovabha Memorial Institute,Thailand,9,13.7323768,100.5326786
-Queen’s University,Canada,9,54.5842117,-5.9364324
+Queenï¿½s University,Canada,9,54.5842117,-5.9364324
 Raja Isteri Pengiran Anak Saleha Hospital,Brunei Darussalam,9,4.89319795,114.9319517
 Research Network of NANOTEC - CU on Environment,Thailand,9,14.8971921,100.83273
 Rollins School of Public Health,United States,9,39.7837304,-100.445882
@@ -1613,7 +1613,7 @@ National Institutes of Natural Sciences - Institute for Molecular Science,Japan,
 National Sun Yat-Sen University,Taiwan,8,22.62800585,120.2662241
 National University of Civil Engineering,Viet Nam,8,50.4259777,30.46803479
 National University of Sciences and Technology Pakistan,Pakistan,8,33.64481875,72.99177825
-Nationwide Children’s Hospital,United States,8,39.9520639,-82.97900743
+Nationwide Childrenï¿½s Hospital,United States,8,39.9520639,-82.97900743
 "Niigata University, Graduate School of Medical and Dental Science",Japan,8,36.5748441,139.2394179
 Northwell Health System,United States,8,39.7837304,-100.445882
 North-Western State Medical University named after I.I. Mechnikov,Russian Federation,8,64.6863136,97.7453061
@@ -1634,7 +1634,7 @@ Samutsakhon General Hospital,Thailand,8,14.8971921,100.83273
 Sawan Pracharak Hospital,Thailand,8,15.7069998,100.1384386
 Senckenberg Forschungsinstitut und Naturmuseum,Germany,8,51.1638175,10.4478313
 SRM Institute of Science and Technology Ramapuram Campus,India,8,22.3511148,78.6677428
-St. John’s Medical College,India,8,12.93056465,77.61939572
+St. Johnï¿½s Medical College,India,8,12.93056465,77.61939572
 Statens Naturhistoriske Museum,Denmark,8,55.6873905,12.57699088
 Sterrewacht Leiden,Netherlands,8,52.15483645,4.483882061
 STIKes Wira Medika Bali,Indonesia,8,-8.6340484,115.2268101
@@ -1749,7 +1749,7 @@ Gleneagles Hospital,Singapore,7,1.30732925,103.8198385
 Global Hospital,India,7,27.6665524,85.33305279
 Global Hospitals,India,7,13.00980225,80.25147023
 Graduate School of Medical Sciences,Japan,7,40.7653801,-73.95346798
-Guangdong Provincial People’s Hospital of Southern Medical University,China,7,35.0000663,104.999955
+Guangdong Provincial Peopleï¿½s Hospital of Southern Medical University,China,7,35.0000663,104.999955
 Harbin Medical University,China,7,46.5962562,125.1614156
 Harbor-UCLA Medical Center,United States,7,33.82944295,-118.2947553
 Harvard-Smithsonian Center for Astrophysics,United States,7,42.38142,-71.12838286
@@ -1928,13 +1928,13 @@ Bristol Medical School,United Kingdom,6,54.7023545,-3.2765753
 Broad Institute,United States,6,42.36815505,-71.08698114
 Brookhaven National Laboratory,United States,6,40.8762408,-72.87131343
 Centro de Investigaci?n Biom?dica en Red de Epidemiolog?a y Salud P?blica,Spain,6,39.3260685,-4.8379791
-Children’s Health Queensland,Australia,6,-27.48451025,153.0256839
+Childrenï¿½s Health Queensland,Australia,6,-27.48451025,153.0256839
 China Medical University Beigang Hospital,Taiwan,6,23.5983227,120.8353769
 Chinese Center for Disease Control and Prevention,China,6,35.0000663,104.999955
 Chonnam National University Medical School,South Korea,6,36.638392,127.6961188
 "Christ University, Bengaluru",India,6,12.93377475,77.60516059
 CHU de Nantes,France,6,47.2010438,-1.558583926
-CICECO – Instituto de Materiais de Aveiro,Portugal,6,39.6621648,-8.1353519
+CICECO ï¿½ Instituto de Materiais de Aveiro,Portugal,6,39.6621648,-8.1353519
 Clinica Alemana,Chile,6,-38.7363728,-72.61125037
 College of Biosystems Engineering and Food Science,China,6,35.0000663,104.999955
 College of Medicine,Saudi Arabia,6,14.575603,120.9856213
@@ -2968,7 +2968,7 @@ Tulane University,United States,4,29.94121955,-90.12010089
 UC Davis School of Medicine,United States,4,38.5529775,-121.4527317
 UCL Institute of Ophthalmology,United Kingdom,4,51.5271258,-0.091017361
 UCLA Stein Eye Institute,United States,4,39.7837304,-100.445882
-UCSF Benioff Children‘s Hospital,United States,4,37.7647716,-122.3896641
+UCSF Benioff Childrenï¿½s Hospital,United States,4,37.7647716,-122.3896641
 UCSF Helen Diller Family Comprehensive Cancer Center,United States,4,39.7837304,-100.445882
 Uluslararas? K?br?s ?niversitesi,Cyprus,4,35.2219162,33.4169878
 United States Agency for International Development,United States,4,5.3708444,-3.99378
@@ -3050,7 +3050,7 @@ Vall d'Hebron Institut de Recerca,Spain,4,41.42784845,2.13895406
 Vanderbilt-Ingram Cancer Center,United States,4,36.1401329,-86.8027387
 Vietnam Institute of Geosciences and Mineral Resources,Viet Nam,4,20.98258235,105.7939238
 VinUniversity,Viet Nam,4,20.9885973,105.9460279
-VSB – Technical University of Ostrava,Czech Republic,4,49.7439047,15.3381061
+VSB ï¿½ Technical University of Ostrava,Czech Republic,4,49.7439047,15.3381061
 Waikato Hospital,New Zealand,4,-37.80537155,175.2829745
 Walter and Eliza Hall Institute of Medical Research,Australia,4,-24.7761086,134.755
 Wayne State University School of Medicine,United States,4,39.7837304,-100.445882
@@ -3086,7 +3086,7 @@ Agency for Meteorology,Indonesia,3,-2.4833826,117.8902853
 Agricultural Biotechnology Research Institute of Iran,Iran,3,32.6475314,54.5643516
 Ajou University,South Korea,3,37.28300235,127.0453782
 Akkineni Nageswara Rao College,India,3,16.42916965,80.96910257
-Alberta Children’s Hospital Research Institute,Canada,3,61.0666922,-107.991707
+Alberta Childrenï¿½s Hospital Research Institute,Canada,3,61.0666922,-107.991707
 Alexander Dubcek University of Trencin,Slovakia,3,48.7411522,19.4528646
 Alfred-Wegener-Institut Helmholtz-Zentrum f?r Polar- und Meeresforschung,Germany,3,53.5332819,8.580111341
 Alice Ho Miu Ling Nethersole Charity Foundation Professor in Nursing,Hong Kong,3,22.350627,114.1849161
@@ -3163,7 +3163,7 @@ Central China Normal University,China,3,30.5204122,114.3562864
 Central South University of Forestry and Technology,China,3,28.13341185,112.9858525
 Central University of Haryana,India,3,22.3511148,78.6677428
 Central University of Kerala,India,3,12.39316345,75.09234787
-Centre d’Immunologie de Marseille-Luminy,France,3,43.2337065,5.441949129
+Centre dï¿½Immunologie de Marseille-Luminy,France,3,43.2337065,5.441949129
 Centre for the Environment Fisheries and Aquaculture Science,United Kingdom,3,54.7023545,-3.2765753
 Centre Hospitalier Lyon-Sud,France,3,45.70526455,4.809348594
 Centre Hospitalier Universitaire de Nice,France,3,43.72451385,7.282179053
@@ -3469,7 +3469,7 @@ Kyoto University of Education,Japan,3,36.5748441,139.2394179
 Kyushu Institute of Technology,Japan,3,36.5748441,139.2394179
 Kyushu Sangyo University,Japan,3,33.67077675,130.4444986
 "Kyushu University, Research Institute for Applied Mechanics",Japan,3,36.5748441,139.2394179
-L’?cole de m?decine,Canada,3,46.58547635,0.346032369
+Lï¿½?cole de m?decine,Canada,3,46.58547635,0.346032369
 Laboratoire de l'Acc?l?rateur Lin?aire,France,3,48.6987561,2.17259817
 Laborat?rio Interinstitucional de e-Astronomia,Brazil,3,-10.3333333,-53.2
 Lagos University Teaching Hospital,Nigeria,3,6.51827205,3.35655035
@@ -3632,7 +3632,7 @@ Pusan National University Yangsan Hospital,South Korea,3,35.32664475,129.0079543
 Pusat Jantung Nasional Harapan Kita,Indonesia,3,-6.1855678,106.7978947
 Pushpagiri Institute of Medical Sciences and Research Centre,India,3,22.3511148,78.6677428
 Quantum Technology Foundation (Thailand),Thailand,3,14.8971921,100.83273
-Queensland Children’s Hospital,Australia,3,-27.48400365,153.0265387
+Queensland Childrenï¿½s Hospital,Australia,3,-27.48400365,153.0265387
 Rady Children's Hospital,United States,3,32.8085178,-117.1499379
 Raigmore Hospital,United Kingdom,3,57.4747958,-4.193570278
 Rajabhat Maha Sarakham University,Thailand,3,14.8971921,100.83273
@@ -3862,7 +3862,7 @@ University Hospitals of Leicester NHS Trust,United Kingdom,3,54.7023545,-3.27657
 "University of Agricultural Sciences, Bangalore",India,3,13.0329667,77.58653659
 University of Alabama at Birmingham School of Medicine,United States,3,39.7837304,-100.445882
 University of Alaska Anchorage,United States,3,61.19037895,-149.8223254
-University of Arizona College of Medicine – Phoenix,United States,3,39.7837304,-100.445882
+University of Arizona College of Medicine ï¿½ Phoenix,United States,3,39.7837304,-100.445882
 University of Baghdad,Iraq,3,33.2840663,44.2560784
 University of Banja Luka,Bosnia and Herzegovina,3,44.77527475,17.21141249
 "University of Birmingham, College of Medical and Dental Sciences",United Kingdom,3,54.7023545,-3.2765753
@@ -4026,7 +4026,7 @@ Asian Disaster Preparedness Center,Thailand,2,23.7796419,90.3933404
 Assiut University,Egypt,2,27.0862716,31.06883346
 Associates of Cape Cod Inc.,United States,2,39.7837304,-100.445882
 "Associates of Cape Cod, Inc.",United States,2,39.7837304,-100.445882
-Association “Naso Sano” Onlus,Italy,2,42.6384261,12.674297
+Association ï¿½Naso Sanoï¿½ Onlus,Italy,2,42.6384261,12.674297
 ASST Santi Paolo e Carlo,Italy,2,42.6384261,12.674297
 ASST Valtellina e Alto Lario,Italy,2,42.6384261,12.674297
 "A-Star, Bioprocessing Technology Institute",Singapore,2,1.357107,103.8194992
@@ -4169,7 +4169,7 @@ CHD Insurance Broker,Thailand,2,14.8971921,100.83273
 Cheng Shiu University,Taiwan,2,22.64929535,120.3500371
 Chiang Kham Hospital,Thailand,2,16.2641251,103.7399961
 Chiba Institute of Technology,Japan,2,35.6888667,140.0211756
-Children’s Hospital of Fudan University,China,2,35.0000663,104.999955
+Childrenï¿½s Hospital of Fudan University,China,2,35.0000663,104.999955
 Children's Hospital of Chongqing Medical University,China,2,35.0000663,104.999955
 "Children's Hospital of Eastern Ontario, Ottawa",Canada,2,45.40148025,-75.65146147
 Children's Hospital of The King's Daughters Health System,United States,2,39.7837304,-100.445882
@@ -4189,7 +4189,7 @@ City Clinical Oncology Dispensary,Russian Federation,2,64.6863136,97.7453061
 Civil Service Hospital,Nepal,2,27.68652065,85.33890612
 Clark Atlanta University,United States,2,33.75012475,-84.41158897
 Clark University,United States,2,42.25146815,-71.82295086
-Clinic ‘Cecil Plus’,Russian Federation,2,64.6863136,97.7453061
+Clinic ï¿½Cecil Plusï¿½,Russian Federation,2,64.6863136,97.7453061
 Cl?nica de Doen?as Renais de Bras?lia,Brazil,2,-22.8408136,-43.3065584
 Clinical Development,United States,2,35.02105795,135.7762737
 Clinical Genetic Service,Hong Kong,2,22.350627,114.1849161
@@ -4225,7 +4225,7 @@ Conservation International,United States,2,-18.8761893,47.5501279
 Conservation International,Cambodia,2,-18.8761893,47.5501279
 CONSORCIO MAR PARC DE SALUT DE BARCELONA,Spain,2,39.3260685,-4.8379791
 Copenhagen Business School,Denmark,2,55.67787295,12.52161546
-Copenhagen University Hospital – Herlev and Gentofte,Denmark,2,55.670249,10.3333283
+Copenhagen University Hospital ï¿½ Herlev and Gentofte,Denmark,2,55.670249,10.3333283
 Cornell College,United States,2,41.9253978,-91.42398553
 COVID-19 Task Force of the Young-Otolaryngologists of the International Federations of Oto-Rhino-Laryngological Societies (YO-IFOS),France,2,46.603354,1.8883335
 CSIC - Museo Nacional de Ciencias Naturales (MNCN),Spain,2,39.3260685,-4.8379791
@@ -4423,7 +4423,7 @@ Greater Baltimore Medical Center,United States,2,39.3917767,-76.62564002
 Greenwood Genetics Center,United States,2,34.17465235,-82.16868593
 "Greiner Bio-One North America, Inc.",United States,2,39.7837304,-100.445882
 Groote Schuur Hospital,South Africa,2,-33.94116975,18.46261651
-Groupe d’?tude Ha?tien sur le Sarcome de Kaposi et les Infections Opportunistes,Haiti,2,19.1399952,-72.3570972
+Groupe dï¿½?tude Ha?tien sur le Sarcome de Kaposi et les Infections Opportunistes,Haiti,2,19.1399952,-72.3570972
 Groupe de Recherche en Energie Electrique de Nancy (GREEN),France,2,46.603354,1.8883335
 Groupe H?spitalier Diaconesses Croix Saint-Simon,France,2,46.603354,1.8883335
 Groupe Hospitalier Pellegrin,France,2,44.8275266,-0.603867498
@@ -4580,7 +4580,7 @@ Institute of Nuclear Energy Research Taiwan,Taiwan,2,23.5983227,120.8353769
 "Institute of Nuclear Physics, National Nuclear Center of the Republic of Kazakhstan",Kazakhstan,2,48.1012954,66.7780818
 Institute of Oncology and Radiology of Serbia,Serbia,2,44.02432285,21.07657433
 Institute of Post Graduate Medical Education and Research Kolkatta,India,2,22.3511148,78.6677428
-Institute of Psychiatry “Socola”,Romania,2,45.9852129,24.6859225
+Institute of Psychiatry ï¿½Socolaï¿½,Romania,2,45.9852129,24.6859225
 "Institute of research for development, Thailand",Thailand,2,14.8971921,100.83273
 "Institute of Solid State Physics, Chinese Academy of Sciences",China,2,35.0000663,104.999955
 "Institute of Southeast Asian Studies, Singapore",Singapore,2,1.357107,103.8194992
@@ -4635,7 +4635,7 @@ Iskenderun Technical University,Turkey,2,38.9597594,34.9249653
 Islamabad Medical and Dental College,Pakistan,2,33.6996274,73.0565749
 "Islamic Azad University, Karaj Branch",Iran,2,32.6475314,54.5643516
 Istanbul Basaksehir Cam and Sakura City Training and Research Hospital,Turkey,2,38.9597594,34.9249653
-Istituti Clinici Scientifici Maugeri Spa – SB,Italy,2,42.6384261,12.674297
+Istituti Clinici Scientifici Maugeri Spa ï¿½ SB,Italy,2,42.6384261,12.674297
 "Istituto Di Biologia E Biotecnologia Agraria, Milan",Italy,2,42.6384261,12.674297
 "Istituto Di Radioastronomia, Bologna",Italy,2,42.6384261,12.674297
 "Istituto Di Scienze E Tecnologie Della Cognizione, Rome",Italy,2,42.6384261,12.674297
@@ -4729,7 +4729,7 @@ Kyoritsu Seiyaku Corporation,Japan,2,35.9978634,140.1332721
 Kyoto University Hospital,Japan,2,36.5748441,139.2394179
 KyungHee University College of Medicine,South Korea,2,36.638392,127.6961188
 L.V. Prasad Eye Institute India,India,2,17.4247535,78.42757829
-Laboratoire de Physique de l’Ecole Normale Sup?rieure,France,2,46.603354,1.8883335
+Laboratoire de Physique de lï¿½Ecole Normale Sup?rieure,France,2,46.603354,1.8883335
 Laboratoire de Physique des Hautes Energies et de la Mati?re Condens?e,Morocco,2,28.3347722,-10.37133791
 "Laboratoire ?cologie, Syst?matique et ?volution",France,2,46.603354,1.8883335
 "Laboratoire Interdisciplinaire Sciences, Innovations, Soci?t?s (LISIS)",France,2,46.603354,1.8883335
@@ -4986,7 +4986,7 @@ Northern Arizona University,United States,2,35.1834428,-111.6550004
 Northrop Grumman corporation,United States,2,33.9228137,-118.3802283
 NorthShore University HealthSystem,United States,2,42.1838904,-87.8014056
 Northwick Park Hospital,United Kingdom,2,51.57518005,-0.321527984
-Norvel—Psychological Centre for Counselling and Research,Croatia,2,45.3658443,15.6575209
+Norvelï¿½Psychological Centre for Counselling and Research,Croatia,2,45.3658443,15.6575209
 Nottingham University Business School China,China,2,35.0000663,104.999955
 "Novartis Institutes for BioMedical Research, Inc.",United States,2,39.7837304,-100.445882
 "Novavax, Inc.",United States,2,39.7837304,-100.445882
@@ -5045,7 +5045,7 @@ Pham Ngoc Thach University of Medicine,Viet Nam,2,10.7738288,106.6653538
 Phenikaa University,Viet Nam,2,20.9611686,105.7476241
 Phetchaburi Rajabhat University,Thailand,2,13.0702075,99.9765728
 Philippine Medical Association,Philippines,2,14.6555524,121.0330886
-Phoenix Children’s Hospital,United States,2,33.4789195,-112.0410726
+Phoenix Childrenï¿½s Hospital,United States,2,33.4789195,-112.0410726
 Phra Nakhon Si Ayutthaya Hospital,Thailand,2,14.3439213,100.5596395
 Phuket Marine Biological Center,Thailand,2,7.8003571,98.4088779
 Plant Protection Institute,Hungary,2,40.02314005,116.2801976
@@ -5078,7 +5078,7 @@ Queen Elizabeth Central Hospital Malawi,Malawi,2,-15.80308155,35.02177612
 Queen Elizabeth Hospital Birmingham,United Kingdom,2,52.4513501,-1.94185941
 Queen Sirikit National Institute for Child Health,Thailand,2,14.8971921,100.83273
 Queen Sirikit Sericulture Center (Nakhon Ratchasima),Thailand,2,14.8971921,100.83273
-Queen’s College,India,2,22.28102215,114.191545
+Queenï¿½s College,India,2,22.28102215,114.191545
 Qufu Normal University,China,2,35.0000663,104.999955
 Raghavendra Institute of Pharmaceutical Education &amp; Research,India,2,22.3511148,78.6677428
 Rainbow Sky Association of Thailand,Thailand,2,14.8971921,100.83273
@@ -5166,7 +5166,7 @@ School of Medicine of Nantong University,China,2,35.0000663,104.999955
 "School of Medicine, Makerere University College of Health Sciences",Uganda,2,1.5333554,32.2166578
 "School of Medicine, University of Split",Croatia,2,45.3658443,15.6575209
 "School of Pharmaceutical Sciences, Universiti Sains Malaysia",Malaysia,2,5.35720425,100.2982463
-Scotland’s Rural College (SRUC),United Kingdom,2,55.92140725,-3.17705836
+Scotlandï¿½s Rural College (SRUC),United Kingdom,2,55.92140725,-3.17705836
 Scuola IMT Alti Studi Lucca,Italy,2,43.8461091,10.51112607
 Seaver Autism Center for Research and Treatment,United States,2,39.7837304,-100.445882
 Second Xiangya Hospital of Central South University,China,2,35.0000663,104.999955
@@ -5186,7 +5186,7 @@ Shahrood University of Technology,Iran,2,36.3871862,54.91700114
 Shandong Agricultural University,China,2,36.16356475,117.1498577
 Shandong Cancer Hospital,China,2,35.0000663,104.999955
 Shandong Provincial Hospital,China,2,35.0000663,104.999955
-Shandong Women’s University,China,2,36.5605189,116.817053
+Shandong Womenï¿½s University,China,2,36.5605189,116.817053
 Shanghai Children's Hospital,China,2,31.20775495,121.518351
 Shanghai Institute of Nutrition and Health,China,2,35.0000663,104.999955
 Shanghai Public Health Clinical Centre,China,2,35.0000663,104.999955
@@ -5265,7 +5265,7 @@ St. Joseph's University,India,2,39.99652965,-75.24151167
 St. Luke's Medical Center,United States,2,14.6230767,121.0231776
 "St. Marien Hospital, Bonn",Germany,2,50.7174852,7.093784076
 St. Mary's Hospital,United Kingdom,2,51.5174403,-0.174323087
-St. Paul‘s Hospital Millennium Medical College,Ethiopia,2,9.0488339,38.72857664
+St. Paulï¿½s Hospital Millennium Medical College,Ethiopia,2,9.0488339,38.72857664
 St?dtisches Klinikum Dresden,Germany,2,51.05817965,13.7176193
 Stallergenes,France,2,48.7325515,2.313199502
 State Key Laboratory of Multiphase Flow in Power Engineering,China,2,35.0000663,104.999955
@@ -5288,7 +5288,7 @@ SUPA71 COMPANY LIMITED,Thailand,2,14.8971921,100.83273
 Surat Thani Hospital,Thailand,2,9.1486397,99.3326784
 Susquehanna University,United States,2,40.79688725,-76.87503743
 "Sveu?ili?te u Zagrebu, Prirodoslovno - matemati?ki fakultet",Croatia,2,45.3658443,15.6575209
-SVKM’s NMIMS School of Pharmacy and Technology Management,India,2,22.3511148,78.6677428
+SVKMï¿½s NMIMS School of Pharmacy and Technology Management,India,2,22.3511148,78.6677428
 Swansea University Medical School,United Kingdom,2,54.7023545,-3.2765753
 Swedish Meteorological and Hydrological Institute,Sweden,2,59.6749712,14.5208584
 Swinburne University of Technology Sarawak Campus,Malaysia,2,1.5324818,110.3571832
@@ -5582,7 +5582,7 @@ University Teaching Hospital Lusaka,Zambia,2,-15.43093515,28.31400877
 University VOC College of Engineering,India,2,8.7898109,78.12766239
 Univerzita Hradec Kr?lov?,Czech Republic,2,50.20931255,15.82647182
 UOSD Laboratorio di Genetica Medica-ASL Viterbo,Italy,2,42.6384261,12.674297
-UPMC Children’s Hospital of Pittsburgh,United States,2,40.46720145,-79.95324526
+UPMC Childrenï¿½s Hospital of Pittsburgh,United States,2,40.46720145,-79.95324526
 UPMC Magee Womens Hospital,United States,2,40.4373688,-79.96128068
 Urmia University of Technology,Iran,2,32.6475314,54.5643516
 USDA Agricultural Research Service,United States,2,40.5593944,-105.0842637
@@ -5661,9 +5661,9 @@ Zoological Park Organization,Thailand,2,14.8971921,100.83273
 Zoological Society of London,United Kingdom,2,51.53695515,-0.152962104
 Zoological Survey of India,India,2,22.50984115,88.33425908
 """Fabia Mater"" Hospital",Italy,1,42.6384261,12.674297
-‘Prof. Dr. George I.M. Georgescu’ Institute of Cardiovascular Diseases,Romania,1,45.9852129,24.6859225
-“SS. Annunziata” University Hospital,Italy,1,42.6384261,12.674297
-“St. Parascheva” Clinical Hospital of Infectious Diseases,Romania,1,45.9852129,24.6859225
+ï¿½Prof. Dr. George I.M. Georgescuï¿½ Institute of Cardiovascular Diseases,Romania,1,45.9852129,24.6859225
+ï¿½SS. Annunziataï¿½ University Hospital,Italy,1,42.6384261,12.674297
+ï¿½St. Paraschevaï¿½ Clinical Hospital of Infectious Diseases,Romania,1,45.9852129,24.6859225
 108 Military Central Hospital,Viet Nam,1,21.01646735,105.8608058
 110167 China,China,1,41.67738055,123.4027141
 15Prasat Neurological Institute,Thailand,1,14.8971921,100.83273
@@ -5868,9 +5868,9 @@ ANScientistify INC.,Taiwan,1,23.5983227,120.8353769
 Antequera Hospital,Spain,1,37.03061735,-4.528253352
 Antonio Giudici Butterfly Trips,Thailand,1,14.8971921,100.83273
 ANU Medical School,Australia,1,-35.28285895,149.1142497
-AOR San Carlo—Potenza—UOC Chirurgia Generale e Urgenza,Italy,1,42.6384261,12.674297
+AOR San Carloï¿½Potenzaï¿½UOC Chirurgia Generale e Urgenza,Italy,1,42.6384261,12.674297
 AORN Cardarelli,Italy,1,42.6384261,12.674297
-AOUI Verona Chirurgia Generale E dell’Esofago e dello Stomaco,Italy,1,42.6384261,12.674297
+AOUI Verona Chirurgia Generale E dellï¿½Esofago e dello Stomaco,Italy,1,42.6384261,12.674297
 Apache Point Observatory,United States,1,32.78029845,-105.8199091
 Apollo Multispeciality Hospitals,India,1,13.63518,79.4189335
 Appalachian State University,United States,1,36.21135245,-81.6860913
@@ -6159,7 +6159,7 @@ Bioversity International,Italy,1,28.6265266,77.1609858
 Bir Hospital,Nepal,1,27.7051958,85.3137874
 Birla Institute of Scientific Research,India,1,22.3511148,78.6677428
 "Birla Institute of Technology and Science, Pilani",India,1,28.35866475,75.58825578
-Birmingham Women’s and Children’s NHS Foundation Trust,United Kingdom,1,54.7023545,-3.2765753
+Birmingham Womenï¿½s and Childrenï¿½s NHS Foundation Trust,United Kingdom,1,54.7023545,-3.2765753
 Bitr?n y Asociados,Chile,1,-31.7613365,-71.3187697
 Black Dog Institute,Australia,1,-33.91976775,151.2378537
 Blackpool Victoria Hospital,United Kingdom,1,53.8209731,-3.014046343
@@ -6387,7 +6387,7 @@ Centre de Recherche Astrophysique de Lyon,France,1,46.603354,1.8883335
 Centre de Recherche Cardio-Thoracique de Bordeaux,France,1,46.603354,1.8883335
 Centre de Recherche en Canc?rologie de Marseille,France,1,43.231622,5.4418098
 Centre de Recherche Nucl?aire de Birine,Algeria,1,35.58725125,3.117214336
-Centre de Recherche sur l’Inflammation (CRI),France,1,46.603354,1.8883335
+Centre de Recherche sur lï¿½Inflammation (CRI),France,1,46.603354,1.8883335
 Centre de Recherches M?dicales de Lambar?n?,Gabon,1,-0.6771261,10.2305312
 Centre de R??ducation H?pital du Jura,Switzerland,1,46.7985624,8.2319736
 Centre de Sant? Gaspard KAMARA,Senegal,1,14.4750607,-14.4529612
@@ -6396,7 +6396,7 @@ Centre Emili Mira,Spain,1,41.462343,2.2118313
 Centre Esther Koplowitz,Spain,1,39.3260685,-4.8379791
 Centre for Advanced 2D Materials,Singapore,1,1.357107,103.8194992
 Centre for Biomedical Technologies,Australia,1,49.89410125,-97.15163802
-Centre for Children’s Health Research,Australia,1,-27.48451025,153.0256839
+Centre for Childrenï¿½s Health Research,Australia,1,-27.48451025,153.0256839
 Centre for Digital Therapeutics,Canada,1,61.0666922,-107.991707
 Centre for Ecological Research,Hungary,1,47.1817585,19.5060937
 Centre for Ecology Development and Research (CEDAR),India,1,22.3511148,78.6677428
@@ -6416,7 +6416,7 @@ Centre Henri Becquerel,France,1,49.43966795,1.106901303
 Centre Hospitalier de la Roche sur Yon,France,1,46.9689495,-1.310042365
 Centre Hospitalier de Saint-Dizier,France,1,48.6337267,4.9551699
 "Centre Hospitalier et Universitaire de B?ni-Messous, Algiers",Algeria,1,28.0000272,2.9999825
-Centre Hospitalier National d‘Ophtalmologie des Quinze-Vingts,France,1,48.85033505,2.372020788
+Centre Hospitalier National dï¿½Ophtalmologie des Quinze-Vingts,France,1,48.85033505,2.372020788
 Centre Hospitalier Regional et Universitaire de Tours,France,1,46.603354,1.8883335
 Centre Hospitalier R?gional Metz-Thionville,France,1,46.603354,1.8883335
 Centre Hospitalier Sainte-Anne,France,1,43.22038075,0.056201802
@@ -6534,8 +6534,8 @@ Chikushi Hospital,Japan,1,33.5081364,130.4281573
 Child and Adolescent Mental Health Rajanagarindra Institute,Thailand,1,14.8971921,100.83273
 Childern's Hospital Zagreb,Croatia,1,45.3658443,15.6575209
 Childhood Neuropsychiatric Disorders Initiatives (CNDI),Nigeria,1,9.6000359,7.9999721
-Children’s Hospital “Manuel Ascencio Villarroel”,Bolivia,1,-17.0568696,-64.9912286
-Children’s National Hospital,United States,1,38.927021,-77.01397879
+Childrenï¿½s Hospital ï¿½Manuel Ascencio Villarroelï¿½,Bolivia,1,-17.0568696,-64.9912286
+Childrenï¿½s National Hospital,United States,1,38.927021,-77.01397879
 Children's Foundation Research Center,United States,1,39.7837304,-100.445882
 Children's Health Ireland at Crumlin,United States,1,53.32617935,-6.318903915
 Children's Hospital,Panama,1,42.3373219,-71.10570391
@@ -6623,7 +6623,7 @@ CJ CheilJedang Corporation,South Korea,1,36.638392,127.6961188
 CK St. Mary's Eye Center,South Korea,1,36.638392,127.6961188
 Clarkson University,United States,1,44.65958875,-75.00623975
 "CLEALINKTECHNOLOGY Co., Ltd.",Japan,1,36.5748441,139.2394179
-Cleveland Alzheimer’s Disease Research Center,United States,1,39.7837304,-100.445882
+Cleveland Alzheimerï¿½s Disease Research Center,United States,1,39.7837304,-100.445882
 Cleveland Clinic Florida,United States,1,27.1710872,-80.2949352
 Cleveland Clinic Lou Ruvo Center for Brain Health,United States,1,36.16727885,-115.1546719
 Clinic Montchoisi Teaching Centre,Switzerland,1,46.7985624,8.2319736
@@ -6688,7 +6688,7 @@ College of Nursing,United States,1,41.87002785,-87.67534639
 College of Pharmacy,United States,1,40.72138445,-73.79530871
 College of Physicians and Surgeons,Pakistan,1,40.84142685,-73.94145429
 College of Public Health Sciences,Thailand,1,14.8971921,100.83273
-College of Saint Benedict and Saint John’s University,United States,1,39.7837304,-100.445882
+College of Saint Benedict and Saint Johnï¿½s University,United States,1,39.7837304,-100.445882
 College of Science,Egypt,1,53.33918195,-6.25420418
 College of Technological Studies Kuwait,Kuwait,1,29.3796532,47.9734174
 Colorado Mesa University,United States,1,39.0819157,-108.5559956
@@ -6714,7 +6714,7 @@ Connecticut Agricultural Experiment Station,United States,1,41.33091245,-72.9188
 Connecticut College,United States,1,41.37913335,-72.10653061
 Conquest Hospital,United Kingdom,1,50.885077,0.567871
 Conservation Medicine,Malaysia,1,-36.86291595,174.71898
-Consorci Sanitari Integral—Hospital Moises Broggi Sant Joan,Spain,1,39.3260685,-4.8379791
+Consorci Sanitari Integralï¿½Hospital Moises Broggi Sant Joan,Spain,1,39.3260685,-4.8379791
 Consortium for Clinical Research and Innovation,Singapore,1,1.357107,103.8194992
 Consorzio Nazionale Interuniversitario per le Telecomunicazioni,Italy,1,42.6384261,12.674297
 Constantine the Philosopher University in Nitra,Slovakia,1,48.7411522,19.4528646
@@ -6849,7 +6849,7 @@ Dental Public Health Researcher (Freelance),Thailand,1,14.8971921,100.83273
 Dentaland Clinic,Thailand,1,14.8971921,100.83273
 Denver Health,United States,1,39.7273281,-104.9912085
 Denver Police Crime Lab-Forensics and Evidence Division,United States,1,39.7837304,-100.445882
-Departamento de cirurgia—UNIFIPA,Brazil,1,-10.3333333,-53.2
+Departamento de cirurgiaï¿½UNIFIPA,Brazil,1,-10.3333333,-53.2
 Departamento de Diagnostico Laboratorial,Portugal,1,39.6621648,-8.1353519
 Departement Elektrotechniek (ESAT),Belgium,1,50.6402809,4.6667145
 Department of Architecture and Architectural Engineering,Japan,1,36.5748441,139.2394179
@@ -6904,7 +6904,7 @@ Digital Lab Research and Development Sri Lanka Telecom. PLC,Sri Lanka,1,7.555494
 Dijklander Ziekenhuis,Netherlands,1,52.646442,5.0537582
 Dipartimento di Management,Italy,1,41.906197,12.520129
 Dipartimento di Medicina e Chirurgia,Italy,1,45.68953045,9.633459253
-"Dipartimento di Medicina, Chirurgia e Odontoiatria “Scuola Medica Salernitana""",Italy,1,42.6384261,12.674297
+"Dipartimento di Medicina, Chirurgia e Odontoiatria ï¿½Scuola Medica Salernitana""",Italy,1,42.6384261,12.674297
 Directorate General of Aquaculture,Indonesia,1,-2.4833826,117.8902853
 Directorate General of Commerce Education and Management Sciences,Pakistan,1,30.3308401,71.247499
 Directorate of Commerce Education and Management Sciences,Pakistan,1,30.3308401,71.247499
@@ -7144,7 +7144,7 @@ Facultad de Medicina,Argentina,1,-34.5997479,-58.3977392
 Facultad de Medicina de la Universidad Aut?noma de Madrid,Spain,1,40.48256135,-3.690600669
 Facult? de M?decine Annaba,Algeria,1,36.91227435,7.748674237
 Facult? de Sant?,France,1,48.5284366,2.6544161
-Facult? des sciences de la sant? – Zinder –,Niger,1,17.7356214,9.3238432
+Facult? des sciences de la sant? ï¿½ Zinder ï¿½,Niger,1,17.7356214,9.3238432
 Facult? des Sciences de Monastir,Tunisia,1,35.7647647,10.80575161
 "Facult? des Sciences et Techniques de F?s, Universit? Sidi Mohamed Ben Abdellah",Morocco,1,28.3347722,-10.37133791
 Faculty for Legal and Business Studies Dr Lazar Vrkati?,Serbia,1,44.02432285,21.07657433
@@ -7156,7 +7156,7 @@ Faculty of Dental Medicine and Health,Croatia,1,45.3658443,15.6575209
 Faculty of Dentistry,Thailand,1,1.2957549,103.7836142
 Faculty of Engineering,Australia,1,50.1292524,14.37363475
 Faculty of Engineering &amp; Technology,Egypt,1,26.2540493,29.2675469
-Faculty of Geo-Information Science and Earth Observation – ITC,Netherlands,1,52.2378557,6.8544216
+Faculty of Geo-Information Science and Earth Observation ï¿½ ITC,Netherlands,1,52.2378557,6.8544216
 Faculty of Graduate School,United States,1,9.967689731,8.8807379
 Faculty of Health,Australia,1,35.74703615,51.38069321
 Faculty of Health and Medicine,Indonesia,1,3.0403019,101.7944986
@@ -7335,7 +7335,7 @@ General Hospital,Croatia,1,50.9325418,-1.435113023
 General Hospital,Myanmar,1,50.9325418,-1.435113023
 General Hospital,Singapore,1,50.9325418,-1.435113023
 "General Hospital ""Euromedik,""",Serbia,1,44.02432285,21.07657433
-General Hospital “Riuniti” of Foggia,Italy,1,42.6384261,12.674297
+General Hospital ï¿½Riunitiï¿½ of Foggia,Italy,1,42.6384261,12.674297
 General Hospital Agios Andreas,Greece,1,38.23460785,21.74796548
 General Hospital of Central Theater Command of Chinese People's Liberation Army,China,1,35.0000663,104.999955
 General Hospital of Giannitsa,Greece,1,38.9953683,21.9877132
@@ -7373,7 +7373,7 @@ Geriatric and Special Patients (International) Program,Thailand,1,14.8971921,100
 German Red Cross,Viet Nam,1,48.5202874,11.4998954
 Gerstel LLP,Singapore,1,1.357107,103.8194992
 Gertrude H. Sergievsky Center,United States,1,39.7837304,-100.445882
-"Gestion de l’Eau, Acteurs, Usages",France,1,46.603354,1.8883335
+"Gestion de lï¿½Eau, Acteurs, Usages",France,1,46.603354,1.8883335
 "GF Strong Rehabilitation Centre, British Columbia",Canada,1,49.24710225,-123.1257628
 GGZ Drenthe Mental Health Institute,Netherlands,1,52.2434979,5.6343227
 "Ghent University, Laboratory of Microbiology",Belgium,1,50.6402809,4.6667145
@@ -7511,7 +7511,7 @@ Harvard Faculty of Arts and Sciences,United States,1,39.7837304,-100.445882
 Harvard Law School,United States,1,42.3791064,-71.1196785
 Harvard Pilgrim Health Care Institute,United States,1,39.7837304,-100.445882
 Harvey Mudd College,United States,1,34.10614005,-117.7087281
-Hassenfeld Children’s Hospital,United States,1,40.7430749,-73.9728919
+Hassenfeld Childrenï¿½s Hospital,United States,1,40.7430749,-73.9728919
 Hasso Plattner Institute for Digital Health at Mount Sinai,United States,1,39.7837304,-100.445882
 Hato Pet Wellness Centre,Thailand,1,14.8971921,100.83273
 Haydarpasa Numune Egitim ve Arast?rma Hastanesi,Turkey,1,38.9597594,34.9249653
@@ -7912,7 +7912,7 @@ INSA Toulouse,France,1,43.5695982,1.468440194
 Insight,United States,1,55.7605672,37.6588449
 Institut Agama Islam Negeri Ked.,Indonesia,1,-2.4833826,117.8902853
 Institut Catholique des Arts et M?tiers,France,1,46.603354,1.8883335
-Institut d’Astrophysique de Paris,France,1,48.8349945,2.33525077
+Institut dï¿½Astrophysique de Paris,France,1,48.8349945,2.33525077
 Institut de Biologie Mol?culaire des Plantes,France,1,48.580822,7.763784293
 Institut de Biologie Mol?culaire et Cellulaire,France,1,48.57965675,7.764775033
 Institut de Cardiologie de Montreal,Canada,1,45.5738644,-73.57811978
@@ -7921,14 +7921,14 @@ Institut de Chimie des Substances Naturelles,France,1,46.603354,1.8883335
 Institut de l'Audition,France,1,48.8507463,2.373744693
 Institut de Math?matiques de Bordeaux,France,1,44.8095475,-0.593441906
 Institut de Recherche en G?nie Civil et M?canique,France,1,46.603354,1.8883335
-Institut de Recherche en Immunologie et en Canc?rologie de l’Universit? de Montr?al,Canada,1,61.0666922,-107.991707
+Institut de Recherche en Immunologie et en Canc?rologie de lï¿½Universit? de Montr?al,Canada,1,61.0666922,-107.991707
 Institut de Recherche en Informatique et Syst?mes Al?atoires,France,1,47.644607,-2.748912654
 Institut de Recherche en Sciences de la Sant?,Burkina Faso,1,12.0753083,-1.6880314
 Institut de Recherche sur l'Asie du Sud-est Contemporaine,Thailand,1,14.8971921,100.83273
 Institut des Hautes ?tudes Scientifiques,France,1,48.69380395,2.169918604
 Institut des neurosciences de Montpellier,France,1,43.62718355,3.865991238
 Institut des Neurosciences Paris-Saclay,France,1,46.603354,1.8883335
-Institut des Sciences de l’Evolution de Montpellier,France,1,43.6323813,3.8673942
+Institut des Sciences de lï¿½Evolution de Montpellier,France,1,43.6323813,3.8673942
 Institut dInvestigaci? Biom?dica Sant Pau (IIB Sant Pau),Spain,1,39.3260685,-4.8379791
 Institut Drustvenih Znanosti Ivo Pilar,Croatia,1,45.8070113,15.9695271
 Institut du Cerveau et de la Moelle ?pini?re,France,1,48.8354143,2.364309746
@@ -7970,7 +7970,7 @@ Institute for Health Innovation &amp; Technology,Singapore,1,1.357107,103.819499
 Institute for Health Sciences Research (CNRST/IRSS),Burkina Faso,1,12.0753083,-1.6880314
 Institute for Information Transmission Problems of the Russian Academy of Sciences,Russian Federation,1,64.6863136,97.7453061
 Institute for Integrated Cell-Material Sciences,Japan,1,35.0280095,135.7796207
-Institute for Medicinal Plants Research “Dr. Josif Pan?i?”,Serbia,1,44.02432285,21.07657433
+Institute for Medicinal Plants Research ï¿½Dr. Josif Pan?i?ï¿½,Serbia,1,44.02432285,21.07657433
 Institute for Nucler Research,Russian Federation,1,64.6863136,97.7453061
 Institute for Research and Innovation in Biomedicine,France,1,46.603354,1.8883335
 Institute for Research in Ophthalmology,Poland,1,52.215933,19.134422
@@ -8058,7 +8058,7 @@ Institute of Security and International Studies (ISIS,Thailand,1,14.8971921,100.
 Institute of Software Chinese Academy of Sciences,China,1,35.0000663,104.999955
 Institute of Speleology,Romania,1,45.9852129,24.6859225
 Institute of Surface Chemistry National Academy of Sciences in Ukraine,Ukraine,1,49.4871968,31.2718321
-Institute of Sustainable Innovation for Communities – ISIC,Bangladesh,1,24.4769288,90.2934413
+Institute of Sustainable Innovation for Communities ï¿½ ISIC,Bangladesh,1,24.4769288,90.2934413
 Institute of Urgent and Recovery Surgery n.a V.K. Gusaka of AMS of Ukraine,Ukraine,1,49.4871968,31.2718321
 Institute of Veterinary Research and Development of Central Vietnam,Viet Nam,1,15.9266657,107.9650855
 Institute of Zoology Slovak Academy of Sciences,Slovakia,1,48.7411522,19.4528646
@@ -8262,7 +8262,7 @@ Jiangxi Science and Technology Normal University,China,1,35.0000663,104.999955
 Jilin University of Finance and Economics,China,1,35.0000663,104.999955
 Jimei University,China,1,24.5827448,118.0897804
 Jinan Infectious Disease Hospital,China,1,36.2407557,117.6406413
-Jining No. 1 People’s Hospital,China,1,35.0000663,104.999955
+Jining No. 1 Peopleï¿½s Hospital,China,1,35.0000663,104.999955
 Jinling Hospital,China,1,35.0000663,104.999955
 Jinnah Hospital Lahore,Pakistan,1,31.48462325,74.29710849
 JK Art and Science,Netherlands,1,52.2434979,5.6343227
@@ -8400,7 +8400,7 @@ King Fahad Military Medical Complex,Saudi Arabia,1,26.32069675,50.02183538
 King Fahd Armed Forces Hospital,Saudi Arabia,1,25.6242618,42.3528328
 King Fahd Military Medical Complex,Saudi Arabia,1,25.6242618,42.3528328
 King Faisal Specialist Hospital and Research Center,Yemen,1,16.3471243,47.8915271
-King Momgkut’s University of Technology Thonburi,Thailand,1,14.8971921,100.83273
+King Momgkutï¿½s University of Technology Thonburi,Thailand,1,14.8971921,100.83273
 King Mong Kut Institute of Technology Lardkrabang,Thailand,1,14.8971921,100.83273
 King Mongkut's Inst of Technology,Thailand,1,14.8971921,100.83273
 King Mongkut's of University Technology North,Thailand,1,13.8218432,100.5131602
@@ -8688,7 +8688,7 @@ Maidstone and Tunbridge Wells NHS Trust,United Kingdom,1,54.7023545,-3.2765753
 Maimaah University,Saudi Arabia,1,25.6242618,42.3528328
 Maine Medical Center Research Institute,United States,1,39.7837304,-100.445882
 Makarak Hospital,Thailand,1,13.9081475,99.7675967
-Makerere University–Johns Hopkins University Research Collaboration,Uganda,1,1.5333554,32.2166578
+Makerere Universityï¿½Johns Hopkins University Research Collaboration,Uganda,1,1.5333554,32.2166578
 Malaria Consortium,United Kingdom,1,0.3484955,32.6073007
 Malaviya National Institute of Technology Jaipur,India,1,22.3511148,78.6677428
 Malawi-Liverpool-Wellcome Trust Clinical Research Programme,Malawi,1,-15.8048929,35.02191178
@@ -8720,7 +8720,7 @@ Marine ecology and utilization of marine resources research unit,Thailand,1,14.8
 Marine Institute Ireland,Ireland,1,53.2476793,-8.978110163
 Maritime Medicine Residency Training Centre,Thailand,1,14.8971921,100.83273
 Mars Incorporated,United States,1,47.427982,39.96202017
-MARS—Motor AI Recognition Solution,Thailand,1,14.8971921,100.83273
+MARSï¿½Motor AI Recognition Solution,Thailand,1,14.8971921,100.83273
 Mary Mediatrix Medical Center,Philippines,1,13.9434833,121.1517373
 Mass General Brigham,United States,1,42.39153085,-71.07887553
 Massey University Auckland,New Zealand,1,-36.7327011,174.702929
@@ -9058,7 +9058,7 @@ Natick Soldier Systems Center,United States,1,42.28929645,-71.36360733
 National Academy of Marine Research,Taiwan,1,23.5983227,120.8353769
 National Academy of Medical Sciences,Nepal,1,50.4552785,30.45980758
 National Academy of Sciences of Ukraine,Ukraine,1,50.4505671,30.5289007
-National Aerospace University “Kharkiv Aviation Institute”,Ukraine,1,50.0436141,36.28879465
+National Aerospace University ï¿½Kharkiv Aviation Instituteï¿½,Ukraine,1,50.0436141,36.28879465
 National Agricultural Research Center,Pakistan,1,40.7092208,-89.61481589
 "National Agriculture and Food Research Organization, NARO",Japan,1,36.5748441,139.2394179
 National Astronomical Observatories Chinese Academy of Sciences,China,1,35.0000663,104.999955
@@ -9094,7 +9094,7 @@ National Centre of Ophthalmology Named after Acad. Zarifa Aliyeva,Azerbaijan,1,4
 National Cerebral and Cardiovascular Center,Japan,1,34.77921335,135.5410463
 National Changhua University of Education,Taiwan,1,24.0811381,120.558696
 National Chengchi University,Taiwan,1,24.9802063,121.5749106
-National Children's Hospital “Dr. Carlos S?enz Herrera”,Costa Rica,1,10.2735633,-84.0739102
+National Children's Hospital ï¿½Dr. Carlos S?enz Herreraï¿½,Costa Rica,1,10.2735633,-84.0739102
 National Children's Specialized Hospital ?OKHMATDYT?,Ukraine,1,49.4871968,31.2718321
 National Commission for Medical Arbitration,Mexico,1,19.4326296,-99.1331785
 National Community Advisory Board,Thailand,1,14.8971921,100.83273
@@ -9187,7 +9187,7 @@ National Public Health Laboratory,Nepal,1,17.98067815,-76.79441776
 National Rehabilitation Hospital,United States,1,53.2755022,-6.153032107
 National Research Cardiac Surgery Center,Kazakhstan,1,48.1012954,66.7780818
 National Research Center for Translational Medicine,China,1,35.0000663,104.999955
-National Research Center’Kurchatov Institute’,Russian Federation,1,64.6863136,97.7453061
+National Research Centerï¿½Kurchatov Instituteï¿½,Russian Federation,1,64.6863136,97.7453061
 National Research Council Canada,Canada,1,45.44268755,-75.61828501
 National Research Council of Thailand,Thailand,1,13.8457318,100.5789612
 National Research Institute for Chemical Technology,Nigeria,1,9.6000359,7.9999721
@@ -9209,7 +9209,7 @@ National Universities Commission,Nigeria,1,9.0813706,7.489591103
 National University Bangladesh,Bangladesh,1,23.9504986,90.3800878
 National University of Cheasim Kamchaymear,Cambodia,1,12.5433216,104.8144914
 National University of Computer and Emerging Sciences Lahore,Pakistan,1,30.3308401,71.247499
-National University of Malaysia’s Institute of Ethnic Studies,Malaysia,1,4.5693754,102.2656823
+National University of Malaysiaï¿½s Institute of Ethnic Studies,Malaysia,1,4.5693754,102.2656823
 National University of Southern Patagonia,Argentina,1,-34.9964963,-64.9672817
 National University of the Northeast,Argentina,1,-27.4641221,-58.83942802
 National Vaccine Institute,Thailand,1,14.8971921,100.83273
@@ -9410,14 +9410,14 @@ OPEN Health,China,1,40.6277116,-73.9571868
 OPEN Health,United States,1,40.6277116,-73.9571868
 Open Health,United States,1,40.6277116,-73.9571868
 Operative Unit of General Surgery Magenta Hospital,Italy,1,42.6384261,12.674297
-Operative Unit of General Surgery—Pederzoli Hospital,Italy,1,42.6384261,12.674297
+Operative Unit of General Surgeryï¿½Pederzoli Hospital,Italy,1,42.6384261,12.674297
 Optical Fibre Sensors Research Centre,Ireland,1,52.865196,-7.9794599
 optiferm GmbH,Germany,1,51.1638175,10.4478313
 Optimum Patient Care,United Kingdom,1,42.6783116,-84.501744
 "Ordibehesht Hospital, Shiraz",Iran,1,29.65663195,52.49323389
 ?rebro Universitet,Sweden,1,59.25399205,15.24876794
 Oregon National Primate Research Center,United States,1,45.5234682,-122.8814591
-Organised Medicine Academic Guild—OMAG,India,1,22.3511148,78.6677428
+Organised Medicine Academic Guildï¿½OMAG,India,1,22.3511148,78.6677428
 Organization for Tropical Studies Inc,United States,1,39.7837304,-100.445882
 "Oriental Consultants Holdings Co., Ltd.",Japan,1,36.5748441,139.2394179
 Orlandi Oncologia,Chile,1,-31.7613365,-71.3187697
@@ -9459,7 +9459,7 @@ Pacific Geographical Institute of the Far Eastern Branch of the Russian Academy 
 Pacific International Hospital,Papua New Guinea,1,-9.4773276,147.190807
 Pacific Tsunami Museum,United States,1,19.72592785,-155.0867324
 Paediatric Haematology and Oncology,India,1,22.3511148,78.6677428
-Pai’s Clinic,India,1,22.3511148,78.6677428
+Paiï¿½s Clinic,India,1,22.3511148,78.6677428
 Paichai University,South Korea,1,36.32054285,127.3658656
 Pain in Motion International Research Group,Belgium,1,50.6402809,4.6667145
 Pak Thong Chai Hospital,Thailand,1,14.7443598,102.0323038
@@ -9491,8 +9491,8 @@ ParkCity Medical Centre,Malaysia,1,3.1890565,101.6384401
 Parker Institute for Cancer Immunotherapy,United States,1,39.7837304,-100.445882
 Parkinson and Movement Disorder Alliance (PMD Alliance),United States,1,39.7837304,-100.445882
 Parkinson Canada,Canada,1,45.3414803,-75.7174864
-Parkinson’s Victoria,Australia,1,-38.2860507,142.4458644
-Parkinson’s Victoria Board,Australia,1,-24.7761086,134.755
+Parkinsonï¿½s Victoria,Australia,1,-38.2860507,142.4458644
+Parkinsonï¿½s Victoria Board,Australia,1,-24.7761086,134.755
 Parkinson-Klinik Ortenau,Germany,1,48.2932071,8.217343167
 Parkinson's Disease and Movement Disorder Society,India,1,22.3511148,78.6677428
 Parkinson's Disease and Movement Disorders Center of Boca Raton,United States,1,39.7837304,-100.445882
@@ -9530,7 +9530,7 @@ Penn State Health,United States,1,40.26058515,-77.03932916
 Penn State Health Milton S. Hershey Medical Center,United States,1,40.26370945,-76.67482219
 Pennsylvania Hospital,United States,1,39.9453079,-75.15567002
 People in Need Agency (PINA),Uganda,1,1.5333554,32.2166578
-People’s Health Movement,Benin,1,9.5293472,2.2584408
+Peopleï¿½s Health Movement,Benin,1,9.5293472,2.2584408
 People's Hospital 115,Viet Nam,1,42.6674088,21.153283
 Performance Plus Academy,Thailand,1,14.8971921,100.83273
 Perimeter Institute for Theoretical Physics,Canada,1,43.4653685,-80.5276561
@@ -9793,7 +9793,7 @@ Rea Hospital,Greece,1,34.9002068,33.6359279
 Recherche Clinique et Sant? Communautaire,Morocco,1,28.3347722,-10.37133791
 RECOFTC - The Center for People and Forests,Thailand,1,14.8971921,100.83273
 Red Cross Hospital,Indonesia,1,33.8480298,132.7727454
-Redeemer‘s University,Nigeria,1,9.6000359,7.9999721
+Redeemerï¿½s University,Nigeria,1,9.6000359,7.9999721
 Reef Explorer Fiji,Fiji,1,-18.1239696,179.0122737
 Reef Guardian Sdn. Bhd.,Malaysia,1,4.5693754,102.2656823
 Referat f?r Gesundheit und Umwelt,Germany,1,48.1373619,11.5551428
@@ -10313,7 +10313,7 @@ Specimen repositories and laboratories,United States,1,39.7837304,-100.445882
 Sports and Exercise Medicine Center,Philippines,1,12.7503486,122.7312101
 Sports Medicine Association of Serbia,Serbia,1,44.02432285,21.07657433
 SQ Reference Lab,China,1,35.0000663,104.999955
-SRCC Children’s Hospital,India,1,18.9792796,72.8128061
+SRCC Childrenï¿½s Hospital,India,1,18.9792796,72.8128061
 Sree Balaji Dental College &amp; Hospital (SBDCH),India,1,22.3511148,78.6677428
 Sree Chitra Tirunal Institute for Medical Sciences and Technology,India,1,22.3511148,78.6677428
 Sree Gokulam Medical College,India,1,8.7549141,76.9389435
@@ -10337,7 +10337,7 @@ St George Hospital and Community Health Service,Australia,1,-24.7761086,134.755
 St James's Hospital,Ireland,1,53.34012235,-6.295577975
 St John's Hospital,United Kingdom,1,55.89237245,-3.523045967
 St John's Institute of Dermatology,United Kingdom,1,54.7023545,-3.2765753
-St Paul’s Hospital,Hong Kong,1,22.27807085,114.1882613
+St Paulï¿½s Hospital,Hong Kong,1,22.27807085,114.1882613
 St Vincent's Health Network Sydney,Australia,1,-24.7761086,134.755
 St. Agnes Hospital,United States,1,39.27154095,-76.67345788
 "St. Albert's College, Ernakulam",India,1,9.9857496,76.27860675
@@ -10355,7 +10355,7 @@ St. Joseph University,India,1,-6.7925234,39.08867074
 St. Joseph's College of Engineering,India,1,12.86910055,80.21516981
 "St. Joseph's College, Bengaluru",India,1,12.96278125,77.59673252
 St. Louis Children's Hospital,United States,1,38.63784575,-90.26492688
-St. Luke’s International University,Japan,1,36.5748441,139.2394179
+St. Lukeï¿½s International University,Japan,1,36.5748441,139.2394179
 St. Luke's Heart Institute,Philippines,1,12.7503486,122.7312101
 St. Luke's International Hospital Tokyo,Japan,1,35.6673179,139.7771616
 "St. Mary's College, Thoothukudi",India,1,22.3511148,78.6677428
@@ -10373,7 +10373,7 @@ Stanford Graduate School of Business,United States,1,37.4279687,-122.1622154
 Stanford Law School,United States,1,37.4240548,-122.167553
 Stanley Center for Psychiatric Research and Program in Medical and Population Genetics,United States,1,39.7837304,-100.445882
 Star Hospitals,India,1,34.0289178,74.8002873
-Starship Children’s Hospital,New Zealand,1,-36.8596021,174.7697596
+Starship Childrenï¿½s Hospital,New Zealand,1,-36.8596021,174.7697596
 STAR-Stress,United States,1,39.7837304,-100.445882
 State Budgetary Healthcare Institution of Omsk Region,Russian Federation,1,64.6863136,97.7453061
 State Institution ?Institute of Blood Pathology and Transfusion Medicine of National Academy of Medical Sciences of Ukraine?,Ukraine,1,49.4871968,31.2718321
@@ -10436,7 +10436,7 @@ Surat Thani Rajabhat University,Thailand,1,14.8971921,100.83273
 Surgery Bitenc,Slovenia,1,46.1199444,14.8153333
 Surgery Department,Mexico,1,47.23337805,39.71131391
 Surgical Infections Department Emergency Care Research Institute n.a. I.I.Djanelidze,Russian Federation,1,64.6863136,97.7453061
-Sustainability “Living Labs” Professor: MDIS Singapore (pro bono),Singapore,1,1.357107,103.8194992
+Sustainability ï¿½Living Labsï¿½ Professor: MDIS Singapore (pro bono),Singapore,1,1.357107,103.8194992
 Sustainable Agriculture Foundation,Thailand,1,14.8971921,100.83273
 Sustainable Research Vessel,France,1,46.603354,1.8883335
 Suwon University,South Korea,1,37.21005265,126.9757914
@@ -10504,7 +10504,7 @@ Taungoo University,Myanmar,1,18.950756,96.3649268
 TBI -Toulouse Biotechnology Institute Bio &amp; Chemical Engineering,France,1,46.603354,1.8883335
 Tbilisi-State-University-Tbilisi,Georgia,1,41.7170696,44.72137575
 TCEMED,Bulgaria,1,42.6073975,25.4856617
-Te Whatu Ora – Health New Zealand,New Zealand,1,-41.5000831,172.8344077
+Te Whatu Ora ï¿½ Health New Zealand,New Zealand,1,-41.5000831,172.8344077
 Teaching and Learning Thai as a Foreign Language Group,Thailand,1,14.8971921,100.83273
 Teaching Hospital Nitra,Slovakia,1,48.7411522,19.4528646
 Teaching Veterinary Hospital,Italy,1,27.48096725,83.44580507
@@ -10592,10 +10592,10 @@ The Bobst Hospital of the Animal Medical Center,United States,1,39.7837304,-100.
 The Brody School of Medicine,United States,1,39.7837304,-100.445882
 The California State University,United States,1,34.2455346,-118.5263221
 The Cambodian Association of Nephrology,Cambodia,1,12.5433216,104.8144914
-The Catholic University of Korea Eunpyeong St. Mary’s Hospital,South Korea,1,36.638392,127.6961188
+The Catholic University of Korea Eunpyeong St. Maryï¿½s Hospital,South Korea,1,36.638392,127.6961188
 "The Catholic University of Korea, College of Nursing",South Korea,1,36.638392,127.6961188
 "The Catholic University of Korea, St. Vincent's Hospital",South Korea,1,36.638392,127.6961188
-The Children’s Hospital at Montefiore,United States,1,40.8803725,-73.878898
+The Childrenï¿½s Hospital at Montefiore,United States,1,40.8803725,-73.878898
 The Children's Hospital of Zhengzhou City,China,1,35.0000663,104.999955
 The Children's Hospital Zhejiang University School of Medicine,China,1,35.0000663,104.999955
 "The Children's Hospital, Aurora",United States,1,39.7397795,-104.835817
@@ -10609,7 +10609,7 @@ The Dental Innovation Foundation under Royal Patronage,Thailand,1,14.8971921,100
 The Drug Store Club of Thailand,Thailand,1,14.8971921,100.83273
 "The Eighth Affiliated Hospital, Sun Yat-sen University",China,1,35.0000663,104.999955
 The Engineering Institute of Thail,Thailand,1,14.8971921,100.83273
-The Engineering Institute of Thailand under H.M. The King’s Patronage,Thailand,1,14.8971921,100.83273
+The Engineering Institute of Thailand under H.M. The Kingï¿½s Patronage,Thailand,1,14.8971921,100.83273
 The Eye &amp; Ear Institute,United States,1,39.7837304,-100.445882
 The Faculty of Health and Medical Sciences,Australia,1,-24.7761086,134.755
 The First Hospital of Xian Jiaotong University,China,1,35.0000663,104.999955
@@ -10631,12 +10631,12 @@ The Lister Hospital,United Kingdom,1,51.4864471,-0.150205847
 The Livestock Office of the Region 1,Thailand,1,14.8971921,100.83273
 the Lower Andaman Sea,Thailand,1,14.8971921,100.83273
 The Maharaja Sayajirao University of Baroda,India,1,22.3511148,78.6677428
-The Max Planck Institute for Neurobiology of Behavior – caesar,Germany,1,51.1638175,10.4478313
+The Max Planck Institute for Neurobiology of Behavior ï¿½ caesar,Germany,1,51.1638175,10.4478313
 The Medical City,Philippines,1,14.5899082,121.0690258
 The Medical City Hospital,Philippines,1,14.5899082,121.0690258
 The Medical Research Foundation,Thailand,1,13.0573636,80.24590629
 The MetroHealth System,United States,1,39.7837304,-100.445882
-The Michael J. Fox Foundation for Parkinson‘s Research,United States,1,39.7837304,-100.445882
+The Michael J. Fox Foundation for Parkinsonï¿½s Research,United States,1,39.7837304,-100.445882
 The Mind Research Network,United States,1,39.7837304,-100.445882
 The National Decommissioning Centre,United Kingdom,1,54.7023545,-3.2765753
 The National Hospital Kandy,Sri Lanka,1,7.2865394,80.6321328
@@ -10658,7 +10658,7 @@ The Princess Alexandra Hospital,United Kingdom,1,51.7713543,0.086091281
 The Programmer,Spain,1,43.03524265,-87.91714267
 the Public Worker State Hospital of S?o Paulo,Brazil,1,-10.3333333,-53.2
 The Ratio Institute,Sweden,1,59.6749712,14.5208584
-The Royal Alex Children’s Hospital,United Kingdom,1,50.81993535,-0.117443104
+The Royal Alex Childrenï¿½s Hospital,United Kingdom,1,50.81993535,-0.117443104
 The Royal Oldham Hospital,United Kingdom,1,53.5522696,-2.122572161
 The Second Affiliated Hospital and Yuying Children's Hospital of Wenzhou Medical University,China,1,35.0000663,104.999955
 The Second Affiliated Hospital of Chongqing Medical University,China,1,35.0000663,104.999955
@@ -10689,7 +10689,7 @@ The Vascular Clinic,India,1,18.9585078,72.8109965
 The Walton Centre,United Kingdom,1,53.4665093,-2.930371694
 The Whittington Hospital,United Kingdom,1,51.56655995,-0.139341465
 The Wire,India,1,-33.61512169,150.6320657
-The Women’s Clinic,Hong Kong,1,33.86802805,-98.57871773
+The Womenï¿½s Clinic,Hong Kong,1,33.86802805,-98.57871773
 The York Hospital,United Kingdom,1,53.9688714,-1.0815047
 Theageneio Cancer Hospital of Thessaloniki,Greece,1,40.61780665,22.95997739
 Thermo-Calc Software AB,Sweden,1,59.6749712,14.5208584
@@ -10722,7 +10722,7 @@ Tokyo General Hospital,Japan,1,35.727924,139.66419
 Tokyo Metropolitan College of Industrial Technology,Japan,1,35.7349913,139.8093698
 Torbay Hospital,United Kingdom,1,50.4817461,-3.553993719
 Toronto General Hospital,Canada,1,43.6585876,-79.38815803
-Toronto Western Hospital–University Health Network (UHN),Canada,1,61.0666922,-107.991707
+Toronto Western Hospitalï¿½University Health Network (UHN),Canada,1,61.0666922,-107.991707
 Tosoh Corporation,Japan,1,36.5748441,139.2394179
 "Total Toxicology Labs, LLC",United States,1,39.7837304,-100.445882
 Toyo University,Japan,1,35.723417,139.7505853
@@ -10784,7 +10784,7 @@ Udon Thani General Hospital,Thailand,1,14.8971921,100.83273
 Udonthani Cancer Hospital,Thailand,1,17.2633659,102.8825237
 Udornthani Cancer Hospital,Thailand,1,14.8971921,100.83273
 UEG Medical Imaging Equipment Co. Ltd.,China,1,35.0000663,104.999955
-UF Health Shands Children’s Hospital,United States,1,39.7837304,-100.445882
+UF Health Shands Childrenï¿½s Hospital,United States,1,39.7837304,-100.445882
 UK Center for Tobacco and Alcohol Studies,United Kingdom,1,54.7023545,-3.2765753
 ULi?ge,Belgium,1,50.643081,5.5713169
 Ulsan University Hospital,South Korea,1,35.51935875,129.4292212
@@ -10817,7 +10817,7 @@ Unionlink Co.,Thailand,1,14.8971921,100.83273
 Unit A,United States,1,43.1429009,-84.57073555
 Unit of Teaching and Research in Occupational and Environmental Health,Benin,1,9.5293472,2.2584408
 Unit? operativa complessa chirurgia generale ospedale Umberto I di Enna,Italy,1,42.6384261,12.674297
-Unit? Operativa Complessa di Chirurgia—Ospedale Santa Maria delle Stelle,Italy,1,42.6384261,12.674297
+Unit? Operativa Complessa di Chirurgiaï¿½Ospedale Santa Maria delle Stelle,Italy,1,42.6384261,12.674297
 UNITEC Institute of Technology,New Zealand,1,-36.88008025,174.7078026
 United Engineers,India,1,-45.8771604,170.5081253
 United Hospital,Bangladesh,1,44.94335435,-93.10693715
@@ -10860,7 +10860,7 @@ Universidad de La Sabana,Colombia,1,4.8609881,-74.03323667
 Universidad de La Serena,Chile,1,-30.0044095,-70.8171939
 Universidad de Le?n,Spain,1,21.09771295,-101.657046
 Universidad de Nari?o,Colombia,1,1.23253395,-77.29338846
-Universidad de O’Higgins,Chile,1,-34.1683355,-70.73968545
+Universidad de Oï¿½Higgins,Chile,1,-34.1683355,-70.73968545
 Universidad de Playa Ancha,Chile,1,-32.748128,-70.73075842
 Universidad de San Andres,Argentina,1,-34.4461878,-58.53024257
 Universidad de Santander,Colombia,1,8.9760544,-79.52885279
@@ -11029,7 +11029,7 @@ University Department of Surgery,Greece,1,48.9227298,24.7085089
 University Eye Clinic,North Macedonia,1,43.6590703,-79.3909591
 University Eye Clinic,Serbia,1,43.6590703,-79.3909591
 University Health,United States,1,39.0845711,-94.57522639
-University Hospital “Prof. Dr. Stoyan Kirkovich”,Bulgaria,1,42.6073975,25.4856617
+University Hospital ï¿½Prof. Dr. Stoyan Kirkovichï¿½,Bulgaria,1,42.6073975,25.4856617
 University Hospital Alexandrovska,Bulgaria,1,42.6073975,25.4856617
 University Hospital AOU Citt? della Salute e della Scienza,Italy,1,42.6384261,12.674297
 University Hospital Center Riejka,Croatia,1,45.3658443,15.6575209
@@ -11239,7 +11239,7 @@ Vaccine and Gene Therapy Institute of Florida,United States,1,39.7837304,-100.44
 Vaccine Formulation Institute,Switzerland,1,46.7985624,8.2319736
 Vaccines Medical,Malaysia,1,4.5693754,102.2656823
 Vajira Phuket hospital,Thailand,1,14.8971921,100.83273
-Vall d’Hebron Hospital,Spain,1,41.42815345,2.14074352
+Vall dï¿½Hebron Hospital,Spain,1,41.42815345,2.14074352
 Vallabhbhai Patel Chest Institute,India,1,28.6906338,77.2098703
 Valley Children's Healthcare,United States,1,39.7837304,-100.445882
 Valley City State University,United States,1,46.91858615,-98.00276371
@@ -11421,7 +11421,7 @@ World Obesity Federation,United Kingdom,1,54.7023545,-3.2765753
 World Organisation for Animal Health (WOAH),France,1,46.603354,1.8883335
 World Resources Institute,United States,1,38.8991383,-77.0081427
 WorldWide Antimalarial Resistance Network,United Kingdom,1,54.7023545,-3.2765753
-WorldWide Antimalarial Resistance Network – Asia-Pacific Regional Centre,Thailand,1,14.8971921,100.83273
+WorldWide Antimalarial Resistance Network ï¿½ Asia-Pacific Regional Centre,Thailand,1,14.8971921,100.83273
 Worldwide Orphans Foundation,Viet Nam,1,15.9266657,107.9650855
 Worthing Hospital,United Kingdom,1,50.81655395,-0.363957529
 WSB Merito University,Poland,1,51.11323055,16.98169062
