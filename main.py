@@ -114,9 +114,50 @@ if exclude_cu:
 # เลือกธีมแผนที่
 map_style = st.sidebar.selectbox("Select Map Style", ["light", "dark", "satellite", "streets"], index=1)
 
-Collab_Analysis,Network_Analysis, Citation_Analysis = st.tabs(["Collab_Analysis","Network_Analysis", "Citation_Analysis"])
+
+
+Collab_Analysis, Citation_Analysis = st.tabs(["Collab_Analysis", "Citation_Analysis"])
 
 with Collab_Analysis:
+    #sidebar
+    st.sidebar.subheader("Collab_Analysis")
+    # เลือกรูปแบบ Node Size
+    node_size_option = st.sidebar.radio("Select Node Size", ["Small", "Medium", "Big"], index=1)
+    node_size = {"Small": 100, "Medium": 5000, "Big": 200000}[node_size_option]
+    # แสดงมหาวิทยาลัยต่างช่าติ
+    show_overseas = st.sidebar.checkbox("Show Overseas Universities", value=True)
+    # พิกัดประเทศไทย
+    thailand_bounds = {
+        "north": 19.83,
+        "south": 5.64,
+        "east": 105.65,
+        "west": 97.34
+    }
+    if not show_overseas:
+        # Filter out overseas universities
+        edges_with_coords = edges_with_coords[
+            (edges_with_coords["latitude"] > thailand_bounds["south"]) &
+            (edges_with_coords["latitude"] < thailand_bounds["north"]) &
+            (edges_with_coords["longitude"] > thailand_bounds["west"]) &
+            (edges_with_coords["longitude"] < thailand_bounds["east"])
+    ]
+    # ปรับขนาด Edge ผ่าน Slider
+    edge_width = st.sidebar.slider("Edge Size", 1, 20, default_edge_width, step=1)
+    # ปรับ count ขั้นต่ำและสูงสุด
+    min_count, max_count = st.sidebar.slider(
+        "Count Range",
+        int(edges_with_coords_without_chula['count'].min()),
+        int(edges_with_coords_without_chula['count'].max()),
+        (int(edges_with_coords_without_chula['count'].min()), int(edges_with_coords_without_chula['count'].max())),
+        step=5
+    )
+    # กรองข้อมูลด้วย min_count และ max_count
+    edges_with_coords = edges_with_coords[
+        (edges_with_coords["count"] >= min_count) & 
+        (edges_with_coords["count"] <= max_count)
+    ]
+
+    # Top University
     selected_affiliations = [
         "University of Oxford",
         "Stanford University",
@@ -131,21 +172,20 @@ with Collab_Analysis:
     # Title and description
     colored_header(
         label="🌍 University Collaboration Dashboard",
-        description="An interactive visualization of collaboration counts across top universities.",
         color_name="blue-70",
     )
 
-    st.write("### Overview of Collaboration Data")
+    st.write("### Top 5 University Collaboration Data")
     style_metric_cards()
 
 
     # Metric Cards for Highlights
-    st.metric(label="Top University", value=top_university.iloc[0]["Affiliation"])
+    st.metric(label="The most collab University", value=top_university.iloc[0]["Affiliation"])
     col1, col2 = st.columns(2)
     with col1:
-        st.metric(label="Total Collaborations", value=top_university.iloc[0]["count"].astype(int))
+        st.metric(label="Number of Collaborations", value=top_university.iloc[0]["count"].astype(int))
     with col2:
-        st.metric(label="Countries Represented", value=top_university.iloc[0]["Country"])
+        st.metric(label="Country", value=top_university.iloc[0]["Country"])
 
     # Create Altair chart
     bar_chart = (
@@ -226,6 +266,28 @@ with Collab_Analysis:
     with col2:
         st.metric(label="Total Country", value=total_country_excluding_cu.astype(int))
 
+    # เลือก Target ที่สนใจ
+    clicked_target = st.selectbox(
+        "Select a Target University (or click an edge):", edges_with_coords["Affiliation"].unique()
+    )
+
+    # อัปเดต ViewState ตาม Target ที่เลือก
+    if clicked_target:
+        target_info = edges_with_coords[edges_with_coords["Affiliation"] == clicked_target].iloc[0]
+        dynamic_view_state = update_view_state(
+            target_info["latitude"], target_info["longitude"], default_zoom, default_pitch
+        )
+    else:
+        dynamic_view_state = update_view_state(default_lat, default_lon, default_zoom, default_pitch)
+
+    # สร้าง Layer
+    node_color = get_node_color(map_style)
+    edge_layer = create_edge_layer(edges_with_coords, default_lon, default_lat, edge_width)
+    node_layer = create_node_layer(edges_with_coords, node_size, node_color)
+
+    # แสดงแผนที่
+    display_map(edges_with_coords, dynamic_view_state, edge_layer, node_layer, map_style)
+
     # heatmap
     heatmap_layer = pdk.Layer(
         "HeatmapLayer",
@@ -240,7 +302,7 @@ with Collab_Analysis:
     st.pydeck_chart(map)
 
     # Section 2: Country with Highest Total Count
-    st.header("2. Country with Highest Total Count")
+    st.header("2. Country with Highest Collaboration")
 
     country_counts = edges_with_coords_without_chula.groupby("Country")["count"].sum().astype(int).reset_index()
     top_country_row = country_counts.loc[country_counts["count"].idxmax()]
@@ -277,14 +339,14 @@ with Collab_Analysis:
     
 
     # Section 3: Top Affiliation (Country != Thailand)
-    st.header("3. Top Affiliation (Country != Thailand)")
+    st.header("3. Top Oversea Affiliation")
 
     non_thailand_df = edges_with_coords_without_chula[edges_with_coords_without_chula["Country"] != "Thailand"]
     top_affiliation_non_thailand = non_thailand_df.nlargest(1, "count")
     top_affiliation_non_thailand['count'] = top_affiliation_non_thailand['count'].astype(int)
     st.metric(
         label="Top Non-Thai Affiliation",
-        value=f"{top_affiliation_non_thailand.iloc[0]['Affiliation']} ({top_affiliation_non_thailand.iloc[0]['count']})",
+        value=f"{top_affiliation_non_thailand.iloc[0]['Affiliation']} : {top_affiliation_non_thailand.iloc[0]['count']}",
     )
 
     if st.button("Show Top 5 Non-Thai Affiliations", key="non_thai_affiliations"):
@@ -302,14 +364,14 @@ with Collab_Analysis:
         st.altair_chart(chart, use_container_width=True)
 
     # Section 4: Top Affiliation (Country == Thailand)
-    st.header("4. Top Affiliation (Country == Thailand)")
+    st.header("4. Top Local Affiliation")
 
     thailand_df = edges_with_coords_without_chula[edges_with_coords_without_chula["Country"] == "Thailand"]
     top_affiliation_thailand = thailand_df.nlargest(1, "count")
     top_affiliation_thailand['count'] = top_affiliation_thailand['count'].astype(int)
     st.metric(
         label="Top Thai Affiliation",
-        value=f"{top_affiliation_thailand.iloc[0]['Affiliation']} ({top_affiliation_thailand.iloc[0]['count']})",
+        value=f"{top_affiliation_thailand.iloc[0]['Affiliation']} : {top_affiliation_thailand.iloc[0]['count']}",
     )
 
     if st.button("Show Top 5 Thai Affiliations", key="thai_affiliations"):
@@ -325,79 +387,6 @@ with Collab_Analysis:
             .properties(title="Top 5 Thai Affiliations")
         )
         st.altair_chart(chart, use_container_width=True)
-
-
-
-with Network_Analysis:
-    st.title("Spatial and Network Visualization")
-    st.sidebar.subheader("Collab_Analysis")
-
-
-    # เลือกรูปแบบ Node Size
-    node_size_option = st.sidebar.radio("Select Node Size", ["Small", "Medium", "Big"], index=1)
-    node_size = {"Small": 100, "Medium": 5000, "Big": 200000}[node_size_option]
-
-    # แสดงมหาวิทยาลัยต่างช่าติ
-    show_overseas = st.sidebar.checkbox("Show Overseas Universities", value=True)
-    # พิกัดประเทศไทย
-    thailand_bounds = {
-        "north": 19.83,
-        "south": 5.64,
-        "east": 105.65,
-        "west": 97.34
-    }
-
-    if not show_overseas:
-        # Filter out overseas universities
-        edges_with_coords = edges_with_coords[
-            (edges_with_coords["latitude"] > thailand_bounds["south"]) &
-            (edges_with_coords["latitude"] < thailand_bounds["north"]) &
-            (edges_with_coords["longitude"] > thailand_bounds["west"]) &
-            (edges_with_coords["longitude"] < thailand_bounds["east"])
-    ]
-
-    # ปรับขนาด Edge ผ่าน Slider
-    edge_width = st.sidebar.slider("Edge Size", 1, 20, default_edge_width, step=1)
-
-    
-
-    # ปรับ count ขั้นต่ำและสูงสุด
-    min_count, max_count = st.sidebar.slider(
-        "Count Range",
-        int(edges_with_coords_without_chula['count'].min()),
-        int(edges_with_coords_without_chula['count'].max()),
-        (int(edges_with_coords_without_chula['count'].min()), int(edges_with_coords_without_chula['count'].max())),
-        step=5
-    )
-
-    # กรองข้อมูลด้วย min_count และ max_count
-    edges_with_coords = edges_with_coords[
-        (edges_with_coords["count"] >= min_count) & 
-        (edges_with_coords["count"] <= max_count)
-    ]
-
-    # เลือก Target ที่สนใจ
-    clicked_target = st.selectbox(
-        "Select a Target University (or click an edge):", edges_with_coords["Affiliation"].unique()
-    )
-
-    # อัปเดต ViewState ตาม Target ที่เลือก
-    if clicked_target:
-        target_info = edges_with_coords[edges_with_coords["Affiliation"] == clicked_target].iloc[0]
-        dynamic_view_state = update_view_state(
-            target_info["latitude"], target_info["longitude"], default_zoom, default_pitch
-        )
-    else:
-        dynamic_view_state = update_view_state(default_lat, default_lon, default_zoom, default_pitch)
-
-    # สร้าง Layer
-    node_color = get_node_color(map_style)
-    edge_layer = create_edge_layer(edges_with_coords, default_lon, default_lat, edge_width)
-    node_layer = create_node_layer(edges_with_coords, node_size, node_color)
-
-    # แสดงแผนที่
-    display_map(edges_with_coords, dynamic_view_state, edge_layer, node_layer, map_style)
-
     
 
 
@@ -482,7 +471,7 @@ with Citation_Analysis:
     # Visualization for max ID count using Altair
     st.subheader("Visualization: Subject Areas with Maximum ID Count")
     chart_id = alt.Chart(max_id_per_year).mark_bar().encode(
-        x=alt.X("Year:O", title="Year"),
+        x=alt.X("Year:O", title="Year", axis=alt.Axis(labelAngle=0)),
         y=alt.Y("ID_Count:Q", title="ID Count"),
         color=alt.Color("Subject_area_name_ID:N", title="Subject Area"),
         tooltip=["Year", "Subject_area_name_ID","Subject_area_abbrev", "ID_Count"]
@@ -497,7 +486,7 @@ with Citation_Analysis:
     # Visualization for max Cited count using Altair
     st.subheader("Visualization: Subject Areas with Maximum Citations")
     chart_cited = alt.Chart(max_cited_per_year).mark_bar().encode(
-        x=alt.X("Year:O", title="Year"),
+        x=alt.X("Year:O", title="Year", axis=alt.Axis(labelAngle=0)),
         y=alt.Y("Cited_Count:Q", title="Cited Count"),
         color=alt.Color("Subject_area_name_Cited:N", title="Subject Area"),
         tooltip=["Year", "Subject_area_name_Cited","Subject_area_abbrev", "Cited_Count"]
