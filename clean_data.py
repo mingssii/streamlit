@@ -1,8 +1,8 @@
 import pandas as pd
 
 # อ่านไฟล์ CSV
-x = pd.read_csv("affiliation_count.csv", encoding="latin1")
-y = pd.read_csv("affiliation_count(extra).csv", encoding="latin1")
+x = pd.read_csv("raw_data/affiliation_count.csv", encoding="utf-8")
+y = pd.read_csv("raw_data/affiliation_count(extra).csv", encoding="utf-8")
 
 # กรองข้อมูลที่มีคำว่า "Chulalongkorn" และ count น้อยกว่า 100
 filtered = x[(x['Affiliation'].str.contains("Chulalongkorn", case=True)) & (x['count'] < 100)]
@@ -27,4 +27,4 @@ merged['count'] = merged['count'].astype(int)
 x_updated = merged[['Affiliation','Country','count']]
 
 # บันทึกผลลัพธ์กลับไปเป็นไฟล์ใหม่ (ถ้าต้องการ)
-x_updated.to_csv("updated_affiliation_count.csv", index=False, encoding="latin1")
+x_updated.to_csv("updated_affiliation_count.csv", index=False, encoding="utf-8")
