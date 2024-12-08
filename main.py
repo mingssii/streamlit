@@ -44,6 +44,7 @@ def update_view_state(lat, lon, zoom, pitch):
 
 # ฟังก์ชันสร้าง Layer สำหรับเส้นเชื่อม (Edges)
 def create_edge_layer(data, source_lon, source_lat, edge_width):
+  
     return pdk.Layer(
         "ArcLayer",
         data=data,
@@ -52,8 +53,8 @@ def create_edge_layer(data, source_lon, source_lat, edge_width):
         get_width=edge_width,
         auto_highlight=True,
         pickable=True,
-        get_source_color=[255, 102, 0, 160],
-        get_target_color=[0, 102, 255, 160],
+        get_source_color="Color",
+        get_target_color="Color"
     )
 
 # ฟังก์ชันสร้าง Layer สำหรับจุด (Nodes)
@@ -83,7 +84,7 @@ def display_map(data, view_state, edge_layer, node_layer, map_style):
             layers=[edge_layer, node_layer],
             initial_view_state=view_state,
             map_style=f"mapbox://styles/mapbox/{map_style}-v9",
-            tooltip={"html": "<b>Target:</b> {Affiliation}", "style": {"color": "white"}},
+            tooltip={"html": "<b>Target:</b> {Affiliation} <br><b>Count:</b> {count}", "style": {"color": "white"}},
         )
     )
 
@@ -96,6 +97,10 @@ path2 = "Cited.csv"
 edges_with_coords = load_data_utf8(path1)
 cited = load_data_latin(path2)
 
+# Assign color to countries
+unique_countries = edges_with_coords["Country"].dropna().drop_duplicates().tolist()
+color_lookup = pdk.data_utils.assign_random_colors(unique_countries)
+edges_with_coords['Color'] = edges_with_coords.apply(lambda row: color_lookup.get(row['Country']), axis=1)
 
 default_lat = 13.74310735  # Chulalongkorn University
 default_lon = 100.5328837
@@ -108,12 +113,47 @@ edges_with_coords_without_chula = edges_with_coords[edges_with_coords["Affiliati
 
 st.sidebar.header("Visualization Settings")
 exclude_cu = st.sidebar.checkbox("Exclude Chulalongkorn University")
+show_overseas = st.sidebar.radio(
+    "Universities",
+    ["All", "Thailand", "Overseas"],
+    captions=["All Universities", "Thailand Universities Only", "Overseas Universities Only"],
+)
+
 if exclude_cu:
     edges_with_coords_without_chula = edges_with_coords_without_chula[~edges_with_coords_without_chula["Affiliation"].fillna('').str.contains("Chulalongkorn")]
 
+thailand_boundary = {
+    "min_lat": 5.612851,
+    "max_lat": 20.353827,
+    "min_lon": 97.343807,
+    "max_lon": 105.636044,
+}
+
+if show_overseas == "Thailand":
+    # Filter out overseas universities by country
+    edges_with_coords = edges_with_coords[edges_with_coords['Country'] == 'Thailand']
+    # Filter out by coordinates
+
+    edges_with_coords = edges_with_coords[
+        (edges_with_coords["latitude"] >= thailand_boundary["min_lat"]) &
+        (edges_with_coords["latitude"] <= thailand_boundary["max_lat"]) &
+        (edges_with_coords["longitude"] >= thailand_boundary["min_lon"]) &
+        (edges_with_coords["longitude"] <= thailand_boundary["max_lon"])
+]
+
+if show_overseas == "Overseas":
+    # Filter out overseas universities by country
+    edges_with_coords = edges_with_coords[edges_with_coords['Country'] != 'Thailand']
+    # Filter out by coordinates
+    edges_with_coords = edges_with_coords[
+        (edges_with_coords["latitude"] < thailand_boundary["min_lat"]) |
+        (edges_with_coords["latitude"] > thailand_boundary["max_lat"]) |
+        (edges_with_coords["longitude"] < thailand_boundary["min_lon"]) |
+        (edges_with_coords["longitude"] > thailand_boundary["max_lon"])
+]
+
 # เลือกธีมแผนที่
 map_style = st.sidebar.selectbox("Select Map Style", ["light", "dark", "satellite", "streets"], index=1)
-
 
 
 Collab_Analysis, Citation_Analysis = st.tabs(["Collab_Analysis", "Citation_Analysis"])
@@ -125,32 +165,20 @@ with Collab_Analysis:
     node_size_option = st.sidebar.radio("Select Node Size", ["Small", "Medium", "Big"], index=1)
     node_size = {"Small": 100, "Medium": 5000, "Big": 200000}[node_size_option]
     # แสดงมหาวิทยาลัยต่างช่าติ
-    show_overseas = st.sidebar.checkbox("Show Overseas Universities", value=True)
-    # พิกัดประเทศไทย
-    thailand_bounds = {
-        "north": 19.83,
-        "south": 5.64,
-        "east": 105.65,
-        "west": 97.34
-    }
-    if not show_overseas:
-        # Filter out overseas universities
-        edges_with_coords = edges_with_coords[
-            (edges_with_coords["latitude"] > thailand_bounds["south"]) &
-            (edges_with_coords["latitude"] < thailand_bounds["north"]) &
-            (edges_with_coords["longitude"] > thailand_bounds["west"]) &
-            (edges_with_coords["longitude"] < thailand_bounds["east"])
-    ]
+    
+
     # ปรับขนาด Edge ผ่าน Slider
     edge_width = st.sidebar.slider("Edge Size", 1, 20, default_edge_width, step=1)
+
+    # Extract unique counts
+    unique_counts = edges_with_coords["count"].dropna().drop_duplicates().sort_values()
     # ปรับ count ขั้นต่ำและสูงสุด
-    min_count, max_count = st.sidebar.slider(
+    min_count, max_count = st.sidebar.select_slider(
         "Count Range",
-        int(edges_with_coords_without_chula['count'].min()),
-        int(edges_with_coords_without_chula['count'].max()),
-        (int(edges_with_coords_without_chula['count'].min()), int(edges_with_coords_without_chula['count'].max())),
-        step=5
+        options = unique_counts,
+        value = (unique_counts.min(), unique_counts.max())
     )
+
     # กรองข้อมูลด้วย min_count และ max_count
     edges_with_coords = edges_with_coords[
         (edges_with_coords["count"] >= min_count) & 
@@ -297,7 +325,7 @@ with Collab_Analysis:
 
     # Section 2: Country with Highest Total Count
     colored_header(
-        label="🗺️ Country with Highest Collaboration",
+        label="🗺️ Countries with Highest Collaboration",
         description="You can search your country in the right box",
         color_name="blue-50",
     )
@@ -337,7 +365,7 @@ with Collab_Analysis:
 
     # Section 3: Top Affiliation (Country != Thailand)
     colored_header(
-        label="✈️ Country with Highest Collaboration",
+        label="✈️ Universities with Highest Collaboration",
         description="Overseas Affiliation",
         color_name="blue-40",
     )
