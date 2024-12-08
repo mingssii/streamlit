@@ -271,28 +271,17 @@ with Collab_Analysis:
     with col2:
         st.metric(label="Total Country", value=total_country_excluding_cu.astype(int))
 
-    # เลือก Target ที่สนใจ
-    clicked_target = st.selectbox(
-        "Select a Target University", edges_with_coords["Affiliation"].unique()
-    )
-
-    # อัปเดต ViewState ตาม Target ที่เลือก
-    if clicked_target:
-        target_info = edges_with_coords[edges_with_coords["Affiliation"] == clicked_target].iloc[0]
-        dynamic_view_state = update_view_state(
-            target_info["latitude"], target_info["longitude"], default_zoom, default_pitch
-        )
-    else:
-        dynamic_view_state = update_view_state(default_lat, default_lon, default_zoom, default_pitch)
+    dynamic_view_state = update_view_state(default_lat, default_lon, default_zoom, default_pitch)
 
     # สร้าง Layer
+    st.subheader("Network of Collaboration Affiliation")
     node_color = get_node_color(map_style)
     edge_layer = create_edge_layer(edges_with_coords, default_lon, default_lat, edge_width)
     node_layer = create_node_layer(edges_with_coords, node_size, node_color)
 
     # แสดงแผนที่
     display_map(edges_with_coords, dynamic_view_state, edge_layer, node_layer, map_style)
-
+    st.subheader("Density of Collaboration Affiliation")
     # heatmap
     heatmap_layer = pdk.Layer(
         "HeatmapLayer",
