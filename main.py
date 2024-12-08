@@ -172,6 +172,7 @@ with Collab_Analysis:
     # Title and description
     colored_header(
         label="🌍 University Collaboration Dashboard",
+        description="An interactive visualization of collaboration counts across top universities.",
         color_name="blue-70",
     )
 
@@ -257,7 +258,11 @@ with Collab_Analysis:
 
 
     # Section 1: Total Count Excluding Chulalongkorn University
-    st.header("1. Total Collaboration")
+    colored_header(
+        label="🤝 Total Collaboration",
+        description="Collaboration with Chulalongkorn University",
+        color_name="blue-60",
+    )
     total_count_excluding_cu = edges_with_coords_without_chula["count"].fillna(0).sum()
     total_country_excluding_cu = edges_with_coords_without_chula["Country"].dropna().drop_duplicates().count()
     col1, col2 = st.columns(2)
@@ -268,7 +273,7 @@ with Collab_Analysis:
 
     # เลือก Target ที่สนใจ
     clicked_target = st.selectbox(
-        "Select a Target University (or click an edge):", edges_with_coords["Affiliation"].unique()
+        "Select a Target University", edges_with_coords["Affiliation"].unique()
     )
 
     # อัปเดต ViewState ตาม Target ที่เลือก
@@ -302,8 +307,11 @@ with Collab_Analysis:
     st.pydeck_chart(map)
 
     # Section 2: Country with Highest Total Count
-    st.header("2. Country with Highest Collaboration")
-
+    colored_header(
+        label="🗺️ Country with Highest Collaboration",
+        description="You can search your country in the right box",
+        color_name="blue-50",
+    )
     country_counts = edges_with_coords_without_chula.groupby("Country")["count"].sum().astype(int).reset_index()
     top_country_row = country_counts.loc[country_counts["count"].idxmax()]
     top_country = top_country_row["Country"]
@@ -339,8 +347,11 @@ with Collab_Analysis:
     
 
     # Section 3: Top Affiliation (Country != Thailand)
-    st.header("3. Top Oversea Affiliation")
-
+    colored_header(
+        label="✈️ Country with Highest Collaboration",
+        description="Overseas Affiliation",
+        color_name="blue-40",
+    )
     non_thailand_df = edges_with_coords_without_chula[edges_with_coords_without_chula["Country"] != "Thailand"]
     top_affiliation_non_thailand = non_thailand_df.nlargest(1, "count")
     top_affiliation_non_thailand['count'] = top_affiliation_non_thailand['count'].astype(int)
@@ -364,8 +375,11 @@ with Collab_Analysis:
         st.altair_chart(chart, use_container_width=True)
 
     # Section 4: Top Affiliation (Country == Thailand)
-    st.header("4. Top Local Affiliation")
-
+    colored_header(
+        label="🌟 Top Local Affiliation",
+        description="Affiliation in Thailand",
+        color_name="blue-30",
+    )
     thailand_df = edges_with_coords_without_chula[edges_with_coords_without_chula["Country"] == "Thailand"]
     top_affiliation_thailand = thailand_df.nlargest(1, "count")
     top_affiliation_thailand['count'] = top_affiliation_thailand['count'].astype(int)
@@ -408,9 +422,15 @@ with Citation_Analysis:
     max_id = cited["ID_Cumsum"].max()
     max_cited = cited["Cited_Cumsum"].max()
 
+    # main tab2
+    colored_header(
+        label=" 📊 Cumulative Analysis of Cited vs IDs",
+        description="An interactive visualization of data trends",
+        color_name="green-70", 
+    )
+    st.write("### Visualizing the cumulative citations vs cumulative IDs by subject area over time")
+
     # UI สำหรับปรับความเร็ว Animation
-    st.title("Cumulative Analysis of Cited vs IDs")
-    st.write("Visualizing the cumulative citations vs cumulative IDs by subject area over time.")
     speed = st.slider("Select Animation Speed (ms per frame)", min_value=100, max_value=2000, value=500, step=100)
 
     # Plot animation using Scatter Plot
@@ -466,10 +486,12 @@ with Citation_Analysis:
     )
 
     # Streamlit application
-    st.title("Analysis of Subject Areas Over the Years")
-
+    colored_header(
+        label=" 🔍 Analysis of Subject Areas Over the Years",
+        description="Visualization: Subject Areas with Maximum ID Count and Maximum Citations",
+        color_name="green-50", 
+    )
     # Visualization for max ID count using Altair
-    st.subheader("Visualization: Subject Areas with Maximum ID Count")
     chart_id = alt.Chart(max_id_per_year).mark_bar().encode(
         x=alt.X("Year:O", title="Year", axis=alt.Axis(labelAngle=0)),
         y=alt.Y("ID_Count:Q", title="ID Count"),
@@ -484,7 +506,6 @@ with Citation_Analysis:
     st.altair_chart(chart_id, use_container_width=True)
 
     # Visualization for max Cited count using Altair
-    st.subheader("Visualization: Subject Areas with Maximum Citations")
     chart_cited = alt.Chart(max_cited_per_year).mark_bar().encode(
         x=alt.X("Year:O", title="Year", axis=alt.Axis(labelAngle=0)),
         y=alt.Y("Cited_Count:Q", title="Cited Count"),
