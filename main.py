@@ -6,7 +6,6 @@ import altair as alt
 from streamlit_extras.colored_header import colored_header
 from streamlit_extras.metric_cards import style_metric_cards
 
-
 # Main Streamlit
 st.set_page_config(page_title="CU Research", layout="wide")
 st.markdown(
@@ -88,8 +87,7 @@ def display_map(data, view_state, edge_layer, node_layer, map_style):
         )
     )
 
-def calculate_total_count(df):
-    return df["count"].fillna(0).sum()
+
 
 
 # ค่าเริ่มต้น
@@ -114,9 +112,9 @@ if exclude_cu:
     edges_with_coords_without_chula = edges_with_coords_without_chula[~edges_with_coords_without_chula["Affiliation"].fillna('').str.contains("Chulalongkorn")]
 
 # เลือกธีมแผนที่
-map_style = st.sidebar.selectbox("Select Map Style", ["light", "dark", "satellite", "streets"], index=0)
+map_style = st.sidebar.selectbox("Select Map Style", ["light", "dark", "satellite", "streets"], index=1)
 
-Collab_Analysis,Map_Collab_Analysis, Citation_Analysis = st.tabs(["Collab_Analysis","Map_Collab_Analysis", "Citation_Analysis"])
+Collab_Analysis,Network_Analysis, Citation_Analysis = st.tabs(["Collab_Analysis","Network_Analysis", "Citation_Analysis"])
 
 with Collab_Analysis:
     selected_affiliations = [
@@ -219,9 +217,27 @@ with Collab_Analysis:
 
 
     # Section 1: Total Count Excluding Chulalongkorn University
-    st.header("1. Total Count Excluding Chulalongkorn University")
-    total_count_excluding_cu = calculate_total_count(edges_with_coords_without_chula)
-    st.metric(label="Total Count", value=total_count_excluding_cu.astype(int))
+    st.header("1. Total Collaboration")
+    total_count_excluding_cu = edges_with_coords_without_chula["count"].fillna(0).sum()
+    total_country_excluding_cu = edges_with_coords_without_chula["Country"].dropna().drop_duplicates().count()
+    col1, col2 = st.columns(2)
+    with col1:
+        st.metric(label="Total Count", value=total_count_excluding_cu.astype(int))
+    with col2:
+        st.metric(label="Total Country", value=total_country_excluding_cu.astype(int))
+
+    # heatmap
+    heatmap_layer = pdk.Layer(
+        "HeatmapLayer",
+        edges_with_coords,
+        get_position="[longitude, latitude]",
+        opacity=0.5,
+        pickable=True
+    )
+
+    view_state = update_view_state(0,0,1,0)
+    map = pdk.Deck(layers=[heatmap_layer], initial_view_state=view_state, map_style=f"mapbox://styles/mapbox/{map_style}-v9")
+    st.pydeck_chart(map)
 
     # Section 2: Country with Highest Total Count
     st.header("2. Country with Highest Total Count")
@@ -234,31 +250,31 @@ with Collab_Analysis:
     col1, col2 = st.columns(2)
 
     with col1:
-        st.metric(label="Top Country", value=f"{top_country} ({top_country_count})")
+        st.metric(label="Country", value=f"{top_country} : {top_country_count}")
 
     with col2:
-        if st.button("Show Top 5 Countries", key="top_countries"):
-            chart = (
-                alt.Chart(country_counts.nlargest(5, "count"))
-                .mark_bar()
-                .encode(
-                    x=alt.X("Country:N", title="Country",sort="-y", axis=alt.Axis(labelAngle=0)),
-                    y=alt.Y("count:Q", title="Total Count"),
-                    color=alt.Color("Country:N", legend=None),
-                    tooltip=["Country", "count"],
-                )
-                .properties(title="Top 5 Countries")
+        search_country = st.text_input("Search Country")
+        if search_country:
+            found = country_counts[country_counts["Country"] == search_country]
+            if not found.empty:
+                st.metric(label="Country", value=f"{search_country} : {found.iloc[0]["count"]}")
+            else:
+                st.error("Country not found.")
+    if st.button("Show Top 5 Countries", key="top_countries"):
+        chart = (
+            alt.Chart(country_counts.nlargest(5, "count"))
+            .mark_bar()
+            .encode(
+                x=alt.X("Country:N", title="Country",sort="-y", axis=alt.Axis(labelAngle=0)),
+                y=alt.Y("count:Q", title="Total Count"),
+                color=alt.Color("Country:N", legend=None),
+                tooltip=["Country", "count"],
             )
-            st.altair_chart(chart, use_container_width=True)
+            .properties(title="Top 5 Countries")
+        )
+        st.altair_chart(chart, use_container_width=True)    
 
-    search_country = st.text_input("Search Country")
-    if search_country:
-        found = country_counts[country_counts["Country"] == search_country]
-        if not found.empty:
-            count = found.iloc[0]["count"]
-            st.success(f"Count for {search_country}: {count}")
-        else:
-            st.error("Country not found.")
+    
 
     # Section 3: Top Affiliation (Country != Thailand)
     st.header("3. Top Affiliation (Country != Thailand)")
@@ -312,7 +328,7 @@ with Collab_Analysis:
 
 
 
-with Map_Collab_Analysis:
+with Network_Analysis:
     st.title("Spatial and Network Visualization")
     st.sidebar.subheader("Collab_Analysis")
 
@@ -382,18 +398,7 @@ with Map_Collab_Analysis:
     # แสดงแผนที่
     display_map(edges_with_coords, dynamic_view_state, edge_layer, node_layer, map_style)
 
-    # heatmap
-    heatmap_layer = pdk.Layer(
-        "HeatmapLayer",
-        edges_with_coords,
-        get_position="[longitude, latitude]",
-        opacity=0.5,
-        pickable=True
-    )
-
-    view_state = update_view_state(0,0,1,0)
-    map = pdk.Deck(layers=[heatmap_layer], initial_view_state=view_state)
-    st.pydeck_chart(map)
+    
 
 
 with Citation_Analysis:
