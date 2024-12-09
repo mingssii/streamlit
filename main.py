@@ -91,20 +91,31 @@ def display_map(data, view_state, edge_layer, node_layer, map_style):
     )
 
 # สร้างฟังก์ชันสำหรับสร้างกราฟ Altair
-def create_chart(column, data):
+def create_chart(column, data, color="steelblue"):
     return (
         alt.Chart(data)
-        .mark_circle(size=60)
+        .mark_circle(size=80, opacity=0.7, color=color)  # กำหนดสีและขนาดของจุด
         .encode(
             x=alt.X(column, title=column.replace("_", " ").capitalize()),
             y=alt.Y("Cited", title="Number of Cited"),
             tooltip=[column, "Cited"]
         )
         .properties(
-            title=f"{column.replace('_', ' ').capitalize()} vs Cited",
-            width=400,
-            height=300
+            title={
+                "text": f"{column.replace('_', ' ').capitalize()} vs Cited",
+                "fontSize": 16,
+                "fontWeight": "bold"
+            },
+            width=450,
+            height=350
         )
+        .configure_axis(
+            labelFontSize=12,
+            titleFontSize=14,
+            titleFont="Arial",
+            labelFont="Arial"
+        )
+        .configure_title(fontSize=18, font="Arial", anchor="start")
     )
 
 
@@ -258,7 +269,7 @@ with Collab_Analysis:
             height=500,
         )
         .configure_axis(labelFontSize=12, titleFontSize=14)
-        .configure_title(fontSize=18, anchor="start", color="gray")
+        .configure_title(fontSize=18, font="Arial", anchor="start")
         .configure_legend(titleFontSize=12, labelFontSize=10)
     )
 
@@ -472,6 +483,33 @@ with Citation_Analysis:
         description="An interactive visualization of data trends",
         color_name="green-70", 
     )
+    # เลือกคอลัมน์ที่ต้องการวิเคราะห์
+    columns_to_plot = ["Subject_area_abbrev","Author_amount"]
+    columns_to_plot2 = ["International_org_amount","Domestic_org_amount"]
+    # เพิ่มเลย์เอาท์ด้วย Card
+    st.subheader("Comparison Charts")
+    col1, col2 = st.columns(2)  # แยกคอลัมน์
+
+    with col1:
+        chart1 = create_chart("Subject_area_abbrev", cited)
+        st.altair_chart(chart1, use_container_width=True)
+
+    with col2:
+        chart2 = create_chart("Author_amount", cited)
+        st.altair_chart(chart2, use_container_width=True)
+
+    # การวิเคราะห์ชุดที่ 2
+    st.subheader("Organization Analysis")
+    col3, col4 = st.columns(2)  # แยกคอลัมน์
+
+    with col3:
+        chart3 = create_chart("International_org_amount", cited)
+        st.altair_chart(chart3, use_container_width=True)
+
+    with col4:
+        chart4 = create_chart("Domestic_org_amount", cited)
+        st.altair_chart(chart4, use_container_width=True)
+
     st.write("### Visualizing the cumulative citations vs cumulative IDs by subject area over time")
 
     # UI สำหรับปรับความเร็ว Animation
@@ -545,7 +583,7 @@ with Citation_Analysis:
         title="Top Subject Areas by ID Count",
         width=600,
         height=400
-    ).configure_title(fontSize=20).configure_axis(labelFontSize=12, titleFontSize=14)
+    ).configure_title(fontSize=18, font="Arial", anchor="start").configure_axis(labelFontSize=12, titleFontSize=14)
 
     st.altair_chart(chart_id, use_container_width=True)
 
@@ -559,33 +597,8 @@ with Citation_Analysis:
         title="Top Subject Areas by Citation Count",
         width=600,
         height=400
-    ).configure_title(fontSize=20).configure_axis(labelFontSize=12, titleFontSize=14)
+    ).configure_title(fontSize=18, font="Arial", anchor="start").configure_axis(labelFontSize=12, titleFontSize=14)
 
     st.altair_chart(chart_cited, use_container_width=True)
 
-    # เลือกคอลัมน์ที่ต้องการวิเคราะห์
-    columns_to_plot = ["Subject_area_abbrev","Author_amount"]
-    columns_to_plot2 = ["International_org_amount","Domestic_org_amount"]
-    # เพิ่มเลย์เอาท์ด้วย Card
-    st.subheader("Comparison Charts")
-    col1, col2 = st.columns(2)  # แยกคอลัมน์
-
-    with col1:
-        chart1 = create_chart("Subject_area_abbrev", cited)
-        st.altair_chart(chart1, use_container_width=True)
-
-    with col2:
-        chart2 = create_chart("Author_amount", cited)
-        st.altair_chart(chart2, use_container_width=True)
-
-    # การวิเคราะห์ชุดที่ 2
-    st.subheader("Organization Analysis")
-    col3, col4 = st.columns(2)  # แยกคอลัมน์
-
-    with col3:
-        chart3 = create_chart("International_org_amount", cited)
-        st.altair_chart(chart3, use_container_width=True)
-
-    with col4:
-        chart4 = create_chart("Domestic_org_amount", cited)
-        st.altair_chart(chart4, use_container_width=True)
+    
