@@ -1,3 +1,4 @@
+import random
 import pydeck as pdk
 import pandas as pd
 import streamlit as st
@@ -98,9 +99,12 @@ edges_with_coords = load_data_utf8(path1)
 cited = load_data_latin(path2)
 
 # Assign color to countries
-unique_countries = edges_with_coords["Country"].dropna().drop_duplicates().tolist()
-color_lookup = pdk.data_utils.assign_random_colors(unique_countries)
-edges_with_coords['Color'] = edges_with_coords.apply(lambda row: color_lookup.get(row['Country']), axis=1)
+def gen_random_color(text):
+    # randomly generate bright colors using country name as seed
+    random.seed(text)
+    return [random.randint(128, 255) for _ in range(3)]
+
+edges_with_coords['Color'] = edges_with_coords.apply(lambda row:  gen_random_color(row['Country']), axis=1)
 
 default_lat = 13.74310735  # Chulalongkorn University
 default_lon = 100.5328837
