@@ -5,6 +5,7 @@ import plotly.express as px
 import altair as alt
 from streamlit_extras.colored_header import colored_header
 from streamlit_extras.metric_cards import style_metric_cards
+from streamlit_extras.card import card
 
 # Main Streamlit
 st.set_page_config(page_title="CU Research", layout="wide")
@@ -88,6 +89,22 @@ def display_map(data, view_state, edge_layer, node_layer, map_style):
         )
     )
 
+# สร้างฟังก์ชันสำหรับสร้างกราฟ Altair
+def create_chart(column, data):
+    return (
+        alt.Chart(data)
+        .mark_circle(size=60)
+        .encode(
+            x=alt.X(column, title=column.replace("_", " ").capitalize()),
+            y=alt.Y("Cited", title="Number of Cited"),
+            tooltip=[column, "Cited"]
+        )
+        .properties(
+            title=f"{column.replace('_', ' ').capitalize()} vs Cited",
+            width=400,
+            height=300
+        )
+    )
 
 
 
@@ -293,10 +310,13 @@ with Collab_Analysis:
     )
     total_count_excluding_cu = edges_with_coords_without_chula["count"].fillna(0).sum()
     total_country_excluding_cu = edges_with_coords_without_chula["Country"].dropna().drop_duplicates().count()
-    col1, col2 = st.columns(2)
+    total_affiliation_excluding_cu = edges_with_coords_without_chula["Affiliation"].dropna().drop_duplicates().count()
+    col1, col2,col3 = st.columns(3)
     with col1:
-        st.metric(label="Total Count", value=total_count_excluding_cu.astype(int))
+        st.metric(label="Total Affiliation", value=total_affiliation_excluding_cu.astype(int))
     with col2:
+        st.metric(label="Total Count", value=total_count_excluding_cu.astype(int))
+    with col3:
         st.metric(label="Total Country", value=total_country_excluding_cu.astype(int))
 
     dynamic_view_state = update_view_state(default_lat, default_lon, default_zoom, default_pitch)
@@ -535,3 +555,30 @@ with Citation_Analysis:
     ).configure_title(fontSize=20).configure_axis(labelFontSize=12, titleFontSize=14)
 
     st.altair_chart(chart_cited, use_container_width=True)
+
+    # เลือกคอลัมน์ที่ต้องการวิเคราะห์
+    columns_to_plot = ["Subject_area_abbrev","Author_amount"]
+    columns_to_plot2 = ["International_org_amount","Domestic_org_amount"]
+    # เพิ่มเลย์เอาท์ด้วย Card
+    st.subheader("Comparison Charts")
+    col1, col2 = st.columns(2)  # แยกคอลัมน์
+
+    with col1:
+        chart1 = create_chart("Subject_area_abbrev", cited)
+        st.altair_chart(chart1, use_container_width=True)
+
+    with col2:
+        chart2 = create_chart("Author_amount", cited)
+        st.altair_chart(chart2, use_container_width=True)
+
+    # การวิเคราะห์ชุดที่ 2
+    st.subheader("Organization Analysis")
+    col3, col4 = st.columns(2)  # แยกคอลัมน์
+
+    with col3:
+        chart3 = create_chart("International_org_amount", cited)
+        st.altair_chart(chart3, use_container_width=True)
+
+    with col4:
+        chart4 = create_chart("Domestic_org_amount", cited)
+        st.altair_chart(chart4, use_container_width=True)
