@@ -62,7 +62,7 @@ def create_edge_layer(data, source_lon, source_lat, edge_width):
 def create_node_layer(data, node_size, node_color):
     return pdk.Layer(
         "ScatterplotLayer",
-        data=data[["Affiliation", "latitude", "longitude"]].drop_duplicates(),
+        data=data[["Affiliation", "latitude", "longitude", "count"]].drop_duplicates(),
         get_position=["longitude", "latitude"],
         get_radius=node_size,
         get_color=node_color,
