@@ -144,7 +144,7 @@ default_edge_width = 3
 edges_with_coords_without_chula = edges_with_coords[edges_with_coords["Affiliation"] != "Chulalongkorn University"]
 
 st.sidebar.header("Visualization Settings")
-exclude_cu = st.sidebar.checkbox("Exclude Chulalongkorn University")
+exclude_cu = st.sidebar.checkbox("Exclude Internal Collaborations", value=True)
 show_overseas = st.sidebar.radio(
     "Universities",
     ["All", "Thailand", "Overseas"],
@@ -242,7 +242,7 @@ with Collab_Analysis:
 
 
     # Metric Cards for Highlights
-    st.metric(label="The most collab University", value=top_university.iloc[0]["Affiliation"])
+    st.metric(label="Top 5's most collab with Chula", value=top_university.iloc[0]["Affiliation"])
     col1, col2 = st.columns(2)
     with col1:
         st.metric(label="Number of Collaborations", value=top_university.iloc[0]["count"].astype(int))
