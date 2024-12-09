@@ -1,3 +1,4 @@
+import random
 import pydeck as pdk
 import pandas as pd
 import streamlit as st
@@ -62,7 +63,7 @@ def create_edge_layer(data, source_lon, source_lat, edge_width):
 def create_node_layer(data, node_size, node_color):
     return pdk.Layer(
         "ScatterplotLayer",
-        data=data[["Affiliation", "latitude", "longitude"]].drop_duplicates(),
+        data=data[["Affiliation", "latitude", "longitude", "count"]].drop_duplicates(),
         get_position=["longitude", "latitude"],
         get_radius=node_size,
         get_color=node_color,
@@ -115,9 +116,12 @@ edges_with_coords = load_data_utf8(path1)
 cited = load_data_latin(path2)
 
 # Assign color to countries
-unique_countries = edges_with_coords["Country"].dropna().drop_duplicates().tolist()
-color_lookup = pdk.data_utils.assign_random_colors(unique_countries)
-edges_with_coords['Color'] = edges_with_coords.apply(lambda row: color_lookup.get(row['Country']), axis=1)
+def gen_random_color(text):
+    # randomly generate bright colors using country name as seed
+    random.seed(text)
+    return [random.randint(128, 255) for _ in range(3)]
+
+edges_with_coords['Color'] = edges_with_coords.apply(lambda row:  gen_random_color(row['Country']), axis=1)
 
 default_lat = 13.74310735  # Chulalongkorn University
 default_lon = 100.5328837
@@ -177,7 +181,7 @@ Collab_Analysis, Citation_Analysis = st.tabs(["Collab_Analysis", "Citation_Analy
 
 with Collab_Analysis:
     #sidebar
-    st.sidebar.subheader("Collab_Analysis")
+    st.sidebar.subheader("Collab Analysis")
     # เลือกรูปแบบ Node Size
     node_size_option = st.sidebar.radio("Select Node Size", ["Small", "Medium", "Big"], index=1)
     node_size = {"Small": 100, "Medium": 5000, "Big": 200000}[node_size_option]
@@ -221,7 +225,8 @@ with Collab_Analysis:
         color_name="blue-70",
     )
 
-    st.write("### Top 5 University Collaboration Data")
+    st.write("### World's Top 5 Universities' Collaboration Data")
+    st.write("This section visualizes the collaboration data of the world's top 5 universities.")
     style_metric_cards()
 
 
@@ -323,6 +328,7 @@ with Collab_Analysis:
 
     # สร้าง Layer
     st.subheader("Network of Collaboration Affiliation")
+    st.write("This section visualizes the collaboration network between Chula and other institutions.")
     node_color = get_node_color(map_style)
     edge_layer = create_edge_layer(edges_with_coords, default_lon, default_lat, edge_width)
     node_layer = create_node_layer(edges_with_coords, node_size, node_color)
@@ -330,6 +336,7 @@ with Collab_Analysis:
     # แสดงแผนที่
     display_map(edges_with_coords, dynamic_view_state, edge_layer, node_layer, map_style)
     st.subheader("Density of Collaboration Affiliation")
+    st.write("This section visualizes the density of collaboration between Chula and other institutions.")
     # heatmap
     heatmap_layer = pdk.Layer(
         "HeatmapLayer",
